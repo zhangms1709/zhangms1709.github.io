@@ -2,7 +2,7 @@ body {
     font-family: "Open Sans", helvetica, arial, sans-serif;
     margin: 3vw;
   }
-  
+
   h1 {
     color: #4E92DF;
   }
@@ -76,7 +76,7 @@ body {
   }
   
   body {
-    background-image: url("https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2Fpretty-sky-blue-fading-wallpaper.jpeg?v=1608985563880");
+    background-image: url("./Background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
