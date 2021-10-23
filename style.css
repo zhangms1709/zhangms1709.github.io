@@ -78,10 +78,10 @@ body {
   
   body {
     background-image: url("./Background.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center center;   
+    background-position: center;   
   }
   
   .hide {
