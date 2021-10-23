@@ -78,7 +78,7 @@ body {
   
   body {
     background-image: url("./Background.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-attachment: fixed;
     background-size: contain;
     background-position: center;   
