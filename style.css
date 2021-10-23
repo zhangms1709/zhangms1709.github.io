@@ -80,7 +80,8 @@ body {
     background-image: url("./Background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto auto;
+    background-size: cover;
+    background-position: center center;   
   }
   
   .hide {
