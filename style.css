@@ -125,3 +125,7 @@ body {
   a2:visited {
     color: DodgerBlue;
   }
+
+  .LI-profile-badge {
+    overflow: hidden;
+  }
