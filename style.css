@@ -22,6 +22,13 @@ body {
     height: 70vh;
   }
   
+  .headwrap {
+    position: absolute;
+    top: -20px;
+    left: 550px;
+    z-index: 1;
+}
+
   .left,
   .right {
     width: 40vw;
@@ -47,7 +54,7 @@ body {
   h1 {
     text-align: center;
     font-family: Yellowtail;
-    font-size: 40px;
+    font-size: 60px;
     text-shadow: 2px 2px 2px rgb(227, 227, 233);
   }
   
@@ -60,13 +67,11 @@ body {
     font-family: Yellowtail;
     font-size: 30px;
   }
-  
-  #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 30%;
-    min-height: 30%;
+
+  myVideo.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .topnav {
@@ -115,6 +120,10 @@ body {
     color: red;
   }
   
+  div.center {
+    text-align:center;
+  }
+
   p,
   p2 {
     font-family: "Corben";
