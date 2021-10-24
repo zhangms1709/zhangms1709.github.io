@@ -63,7 +63,7 @@ body {
   
   #myVideo {
     position: fixed;
-    right: 1;
+    right: 0;
     bottom: 0;
     min-width: 30%;
     min-height: 30%;
