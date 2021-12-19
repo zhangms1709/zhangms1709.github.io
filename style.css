@@ -2,13 +2,25 @@ body {
     font-family: "Open Sans", helvetica, arial, sans-serif;
     margin: 3vw;
     background-image: url("./Background.png");
+    /* background-position: top 100px right; */
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size: contain;
   }
 
   h1 {
     color: #4E92DF;
+    z-index: 1;
+    /* user-select: none; */
+  }
+
+  .h1::after {
+    position:absolute;
+    z-index: -1;
+    background:#4E92DF;
+    transform: scaleX(0.075);
+    transform-origin: left;
+    transition: transform 250ms ease-in;
   }
   
   .logo {
@@ -67,13 +79,13 @@ body {
     font-family: Yellowtail;
     font-size: 30px;
   }
-
-  myVideo.center {
+  
+  /* myVideo.center {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px 30px;
-  }
+  } */
 
   .topnav {
     background-color: transparent;
