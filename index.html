@@ -28,16 +28,49 @@
         <a href="quotes.html">Quotes</a>
         <a href="about.html">About</a>
       </div>
-<div class="center">
-      <video playsinline autoplay muted id="myVideo" controls="true">
-        <source src="Brown.mp4" type="video/mp4">
-    </video>
-</div>
+<style>
+  .image {
+      /* width:1250px; */
+      /* width: 100%; */
+      /* max-width:100%; */
+      padding: 2rem;
+      height: auto;
+      position: relative;
+      top: 0px;
+      left: 550px;
+      display: inline-block;
+      /* text-align: center; */
+  }
+  .image .img-top {
+      display: none;
+      position: relative;
+      /* top: 0; */
+      /* left: 573px; */
+      /* z-index: 99; */
+  }
+  .image:hover .img-top {
+      display: inline;
+      position: absolute;
+      left: 32px;
+      /* object-fit: contain; */
+  }
+</style>
   </head>
 
   <body>
     <div class="headwrap">
-      <h1>Hi, I'm Mason!</h1>
+      <h1 onselectstart="return false">Hi, I'm Mason!</h1>
+    </div>
+  
+    <div class="image">
+      <img src="./portrait.jpeg" alt="Image Front">
+      <img src="./surprise.jpeg" class="img-top" alt="Image Back">
+    </div>
+
+    <div class="center">
+      <video playsinline autoplay muted id="myVideo" controls="true">
+        <source src="Brown.mp4" type="video/mp4">
+    </video>
     </div>
   </body>
 
