@@ -4,7 +4,7 @@ body {
     background-image: url("./Background.png");
     /* background-position: top 100px right; */
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     position: relative;
     background-size: cover;
