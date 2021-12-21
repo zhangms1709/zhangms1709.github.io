@@ -13,7 +13,10 @@ body {
   h1 {
     color: #4E92DF;
     z-index: 1;
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
     /* user-select: none; */
   }
 
