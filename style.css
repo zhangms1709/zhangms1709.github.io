@@ -8,20 +8,22 @@ body {
     background-position: center;
     position: relative;
     background-size: cover;
+    filter: sepia(100%);
   }
 
   h1 {
     color: #4E92DF;
     z-index: 1;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* left: 580px; */
+    /* margin-left: auto;
+    margin-right: auto; */
     /* text-align: center; */
-    /* user-select: none; */
+    text-shadow: 2px 2px 5px blue;
   }
 
   .h1::after {
-    position:absolute;
+    position: absolute;
     z-index: -1;
     background:#4E92DF;
     transform: scaleX(0.075);
