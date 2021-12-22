@@ -18,8 +18,8 @@ body {
     /* left: 580px; */
     /* margin-left: auto;
     margin-right: auto; */
-    /* text-align: center; */
-    text-shadow: 2px 2px 5px blue;
+    text-align: center;
+    /* text-shadow: 2px 2px 5px blue; */
   }
 
   .h1::after {
