@@ -15,8 +15,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* text-align: center; */
-    /* text-shadow: 2px 2px 5px blue; */
   }
 
   .h1::after {
@@ -41,7 +39,7 @@ body {
   
   .headwrap {
     position: absolute;
-    top: -20px;
+    top: 0px;
     left: 550px;
     z-index: 1;
 }
