@@ -28,19 +28,20 @@
         display: block;
         top: -150px;
         text-align: center;
+        z-index: 0;
       }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
   </head>
 
-  <div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="quotes.html">Quotes</a>
-    <a href="about.html">About</a>
-  </div>
-
   <body>
+    <div class="topnav" class = "active">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="quotes.html">Quotes</a>
+      <a href="about.html">About</a>
+    </div>
+
     <h1>
       <p></p>
     </h1>
@@ -56,12 +57,12 @@
     </div> -->
   
     <div class="image">
-      <h1 id="header" onselectstart="return false">Hi, I'm Mason!</h1>
-      <script>
+      <h1 onselectstart="return false">Hi, I'm Mason!</h1>
+      <!-- <script>
         $("#header").on("click", (e) => {
           $("#header").css("color", "black");
         })
-      </script>
+      </script> -->
       <img src="./portrait.jpeg" alt="Image Front">
     </div>
 
