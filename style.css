@@ -37,11 +37,9 @@ body {
     height: 70vh;
   }
   
-  .headwrap {
-    position: absolute;
-    top: 0px;
-    left: 550px;
-    z-index: 1;
+#header {
+    position: relative;
+    text-align: center;
 }
 
   .left,
@@ -137,8 +135,9 @@ body {
     color: red;
   }
   
-  div.center {
+  center {
     text-align:center;
+    top: -150px;
   }
 
   p,
@@ -154,4 +153,8 @@ body {
 
   .LI-profile-badge {
     overflow: hidden;
+  }
+
+  section {
+    margin: 40px;
   }
