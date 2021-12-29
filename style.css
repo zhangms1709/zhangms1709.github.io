@@ -11,12 +11,13 @@ body {
 
   h1 {
     color: #4E92DF;
-    z-index: 1;
+    z-index: 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
+/* 
   .h1::after {
     position: absolute;
     z-index: -1;
@@ -24,7 +25,7 @@ body {
     transform: scaleX(0.075);
     transform-origin: left;
     transition: transform 250ms ease-in;
-  }
+  } */
   
   .logo {
     text-align: left;
@@ -91,6 +92,7 @@ body {
   .topnav {
     background-color: transparent;
     overflow: hidden;
+    /* z-index: 2; */
   }
   
   .topnav a {
@@ -101,6 +103,7 @@ body {
     text-decoration: none;
     font-size: 17px;
     justify-content: space-evenly;
+    z-index: 3;
   }
   
   .topnav a:hover {
@@ -108,7 +111,7 @@ body {
     color: black;
   }
   
-  .topnav a.active {
+  .topnav div.active {
     background-color: #34ade6;
     color: white;
   }
@@ -135,7 +138,7 @@ body {
     color: red;
   }
   
-  center {
+  div.center {
     text-align:center;
     top: -150px;
   }
