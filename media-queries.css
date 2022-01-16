@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     body {
       width: 98vw;
@@ -67,3 +68,8 @@
   }
 
   
+=======
+version https://git-lfs.github.com/spec/v1
+oid sha256:554630b72aa3c673fcb9d8b42cae925a538e2f3286cfa214149016980042af58
+size 1196
+>>>>>>> aac5cf8 (First Update)
