@@ -65,11 +65,16 @@ body {
     font-weight: bold;
   }
 
+  /* h4 {
+    font-family: Yellowtail;
+    font-size: 40px;
+  } */
+
   h1 {
     text-align: center;
     font-family: Yellowtail;
     font-size: 60px;
-    text-shadow: 2px 2px 2px rgb(227, 227, 233);
+    /* text-shadow: 2px 2px 2px rgb(227, 227, 233); */
   }
   
   h2 {
