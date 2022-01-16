@@ -79,7 +79,7 @@ body {
   }
   
   h2 {
-    font-family: Yellowtail;
+    font-family:'Courier New', Courier, monospace;
     font-size: 30px;
   }
   
@@ -140,7 +140,7 @@ body {
   
   .myDIV:hover + .hide {
     display: block;
-    color: red;
+    color: black;
   }
   
   div.center {
