@@ -18,6 +18,11 @@ body {
     margin-right: auto;
   }
 
+  .portfolio {
+    position: relative;
+    text-align: center;
+  }
+
 /* 
   .h1::after {
     position: absolute;
@@ -57,7 +62,8 @@ body {
   
   a,
   a:visited {
-    color: DodgerBlue;
+    /* color: DodgerBlue; */
+    color:black;
   }
   
   @font-face {
@@ -70,7 +76,6 @@ body {
     text-align: center;
     font-family: Yellowtail;
     font-size: 60px;
-    text-shadow: 2px 2px 2px rgb(227, 227, 233);
   }
   
   h2 {
@@ -151,7 +156,8 @@ body {
   
   a2,
   a2:visited {
-    color: DodgerBlue;
+    /* color: DodgerBlue; */
+    color: black;
   }
 
   .LI-profile-badge {
