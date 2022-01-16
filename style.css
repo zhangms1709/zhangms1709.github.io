@@ -62,8 +62,7 @@ body {
   
   a,
   a:visited {
-    /* color: DodgerBlue; */
-    color:black;
+    color: DodgerBlue;
   }
   
   @font-face {
