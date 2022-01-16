@@ -64,6 +64,10 @@ body {
   a:visited {
     color: DodgerBlue;
   }
+
+  footer {
+    position: fixed;
+  }
   
   @font-face {
     font-family: Yellowtail;
