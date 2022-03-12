@@ -1,7 +1,10 @@
 body {
     font-family: "Open Sans", helvetica, arial, sans-serif;
     margin: 3vw;
+    /*
     background-image: url("./Background.png");
+    */
+    background-color: whitesmoke;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -15,6 +18,11 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .portfolio {
+    position: relative;
+    text-align: center;
   }
 
 /* 
@@ -58,6 +66,10 @@ body {
   a:visited {
     color: DodgerBlue;
   }
+
+  footer {
+    position: fixed;
+  }
   
   @font-face {
     font-family: Yellowtail;
@@ -65,20 +77,14 @@ body {
     font-weight: bold;
   }
 
-  /* h4 {
-    font-family: Yellowtail;
-    font-size: 40px;
-  } */
-
   h1 {
     text-align: center;
     font-family: Yellowtail;
     font-size: 60px;
-    /* text-shadow: 2px 2px 2px rgb(227, 227, 233); */
   }
   
   h2 {
-    font-family: Yellowtail;
+    font-family:'Courier New', Courier, monospace;
     font-size: 30px;
   }
   
@@ -139,7 +145,7 @@ body {
   
   .myDIV:hover + .hide {
     display: block;
-    color: red;
+    color: black;
   }
   
   div.center {
@@ -155,7 +161,8 @@ body {
   
   a2,
   a2:visited {
-    color: DodgerBlue;
+    /* color: DodgerBlue; */
+    color: black;
   }
 
   .LI-profile-badge {
