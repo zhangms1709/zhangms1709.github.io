@@ -1,10 +1,8 @@
 body {
     font-family: "Open Sans", helvetica, arial, sans-serif;
     margin: 3vw;
-    /*
-    background-image: url("./Background.png");
-    */
-    background-color: whitesmoke;
+    background-image: url("background.jpeg");
+    /* background-color: whitesmoke; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
