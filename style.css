@@ -1,13 +1,13 @@
 body {
     font-family: "Open Sans", helvetica, arial, sans-serif;
     margin: 3vw;
-    background-image: url("background.jpeg");
+    /* background-image: url("background.jpeg"); */
     /* background-color: whitesmoke; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     position: relative;
-    background-size: cover;
+    background-size:auto;
   }
 
   h1 {
