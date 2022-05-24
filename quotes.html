@@ -8,27 +8,48 @@
 </div>
 <style>
   body {
-      background-image: url("background.jpeg");
-      z-index: -10;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      margin: 0; 
-      height: 100%; 
-      overflow: hidden;
-     }
-  .rectangle{
-  display: inline-block;
-  height: 50px; /*sets height of element*/
-  background: rgba(100, 100, 100, 0.3); /*sets the background of this element (here a solid colour)*/
-  transition: all 0.6s; /*sets a transition (for hover effect)*/
-  padding-left: 20px; /*sets 'padding'*/
-  padding-right: 20px; /*sets 'padding'*/
-  line-height: 50px; /*for this, it sets vertical alignment*/
-  font-family: Verdana;
-  color:white;
-}
+    background-image: url("background.jpeg");
+    z-index: -10;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .rectangle {
+    display: inline-block;
+    height: 50px;
+    /*sets height of element*/
+    background: rgba(228, 221, 221, 0.7);
+    /*sets the background of this element (here a solid colour)*/
+    transition: all 0.6s;
+    /*sets a transition (for hover effect)*/
+    padding-left: 20px;
+    /*sets 'padding'*/
+    padding-right: 20px;
+    /*sets 'padding'*/
+    line-height: 50px;
+    /*for this, it sets vertical alignment*/
+    font-family: Verdana;
+    color: currentColor;
+  }
+
+  /* body::before {
+    content: "";
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+  } */
 </style>
 
 <head>
@@ -38,30 +59,33 @@
   <link rel="stylesheet" href="/media-queries.css" type="text/css" />
   <title>quotes</title>
 </head>
-<div id='write'>
+<div class="quotes">
   <h1 id='favorite-quotes'><span>Favorite Quotes</span>
   </h1>
   <i>
     <p class="rectangle"><span>&quot;Above all, avoid falsehood, every kind of falsehood, especially
         falseness to yourself.&quot; - Elder Zosima</span></p>
     <!-- <p><span>“There are none happy in the world but beings who enjoy freely a vast horizon.” - Krishna</span></p> -->
-    <p style="font-size: 10px", class="rectangle"><span>“We must learn to reawaken and keep ourselves awake, not by mechanical aids
-        but by an infinite expectation of dawn...I know of no more encouraging fact than the unquestionable ability of
-        man to elevate his life by conscious endeavor.” - Thoreau</span></p>
+    <p class="rectangle"><span>&quot;I know of no more encouraging fact than the unquestionable ability of
+        man to elevate his life by conscious endeavor.&quot; - Thoreau</span></p>
     <!-- <p style="font-family: Verdana"><span>&quot;Read 500 pages every day. That&#39;s how knowledge works. It builds up like compound interest.&quot; - Warren Buffett</span></p> -->
-    <p class="rectangle"><span>“Nothing can make our life, or the lives of other people, more beautiful than
-        perpetual kindness.” - Tolstoy </span></p>
+    <p class="rectangle"><span>&quot;Nothing can make our life, or the lives of other people, more beautiful than
+        perpetual kindness.&quot; - Tolstoy </span></p>
     <!-- <p><span>&quot;The fool, with all his other faults, has this also, he is always getting ready to live.&quot; - Epicurus</span></p> -->
     <!-- <p><span>“To speak a second language is to have a second soul” - Charlemagne</span></p> -->
     <!-- <p><span>“There is no permanence” - Utnapishtim</span></p> -->
-    <p style="font-size:12px", class="rectangle"><span>“One who is truly a man should stop thinking about how long he will live. He
-        should thereupon give consideration to how he might live the part of his life still before him as well as
-        possible.” - Socrates</span></p>
-    <p style="font-size:14px", class="rectangle"><span>“Cinnamon can be eaten, therefore the trees that yield it are chopped down.
-        Everybody knows the utility of usefulness, but nobody knows the utility of uselessness.” - Zhuangzi</span></p>
     <!-- <p style="font-family: Verdana"><span>“I am not a man, I am dynamite” - Nietzsche</span></p> -->
-    <p style="font-family: Verdana", class="rectangle"><span>“What we call the beginning is often the end. And to make an end is to make a
-        beginning. The end is where we start from.” - T.S. Eliot</span></p>
+    <p style="font-family: Verdana" , class="rectangle"><span>&quot;What we call the beginning is often the end. And to
+        make an end is to make a
+        beginning. The end is where we start from.&quot; - T.S. Eliot</span></p>
+    <p style="font-size:14px" , class="rectangle"><span>&quot;Cinnamon can be eaten, therefore the trees that yield it
+        are chopped down.
+        Everybody knows the utility of usefulness, but nobody knows the utility of uselessness.&quot; - Zhuangzi</span>
+    </p>
+    <p style="font-size:14px" , class="rectangle"><span>&quot;One who is truly a man should stop thinking how long he
+        will live. He
+        should thereupon consider how he might live the part of his life still before him as well as
+        possible.&quot; - Socrates</span></p>
     <p>&nbsp;</p>
   </i>
 </div>
