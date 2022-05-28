@@ -21,6 +21,7 @@ body {
   .portfolio {
     position: relative;
     text-align: center;
+    z-index: 11;
   }
 
 /* 
