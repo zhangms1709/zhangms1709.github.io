@@ -102,6 +102,7 @@ body {
   .topnav {
     background-color: transparent;
     overflow: hidden;
+    font-family: 'Courier New', Courier, monospace !important;
   }
   
   .topnav a {
