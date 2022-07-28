@@ -1,28 +1,28 @@
 body {
-    font-family: "Open Sans", helvetica, arial, sans-serif;
-    margin: 3vw;
-    /* background-image: url("background.jpeg"); */
-    /* background-color: whitesmoke; */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    position: relative;
-    background-size:auto;
-  }
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  margin: 3vw;
+  /* background-image: url("background.jpeg"); */
+  /* background-color: whitesmoke; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  background-size: auto;
+}
 
-  h1 {
-    color: #4E92DF;
-    z-index: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+h1 {
+  color: #4E92DF;
+  z-index: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .portfolio {
-    position: relative;
-    text-align: center;
-    z-index: 11;
-  }
+.portfolio {
+  position: relative;
+  text-align: center;
+  z-index: 11;
+}
 
 /* 
   .h1::after {
@@ -33,189 +33,142 @@ body {
     transform-origin: left;
     transition: transform 250ms ease-in;
   } */
-  
-  .logo {
-    text-align: left;
-    width: 48vw;
-  }
-  
-  .main {
-    display: flex;
-    justify-content: space-around;
-    height: 70vh;
-  }
-  
-#header {
-    position: relative;
-    text-align: center;
+
+.logo {
+  text-align: left;
+  width: 48vw;
 }
 
-  .left,
-  .right {
-    width: 40vw;
-  }
-  
-  img {
-    height: 40vh;
-    width: auto;
-    margin: 3vh 0;
-  }
-  
-  a,
-  a:visited {
-    color: DodgerBlue;
-  }
+.main {
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+}
 
-  footer {
-    position: fixed;
-  }
-  
-  @font-face {
-    font-family: Yellowtail;
-    src: url("https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FYellowtail-Regular.ttf?v=1608923698829");
-    font-weight: bold;
-  }
+#header {
+  position: relative;
+  text-align: center;
+}
 
-  h1 {
-    text-align: center;
-    font-family: Yellowtail;
-    font-size: 60px;
-  }
-  
-  h2 {
-    font-family:'Courier New', Courier, monospace;
-    font-size: 30px;
-  }
-  
-  h3 {
-    font-family: Yellowtail;
-    font-size: 30px;
-  }
-  
-  myVideo.center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px 30px;
-  }
+.left,
+.right {
+  width: 40vw;
+}
 
-  .topnav {
-    background-color: transparent;
-    overflow: hidden;
-    font-family: 'Courier New', Courier, monospace !important;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    justify-content: space-evenly;
-    z-index: 2;
-  }
-  
-  .topnav a:hover {
-    background-color:#34ade6;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #34ade6;
-    color: white;
-  }
+img {
+  height: 40vh;
+  width: auto;
+  margin: 3vh 0;
+}
 
-  footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .right {
-    margin: 0;
-    max-width: 1500px;
-    width: 100%;
-    height: 100%;
-  }
+a,
+a:visited {
+  color: DodgerBlue;
+}
 
-  .hide {
-    display: none;
-  }
-  
-  .myDIV:hover + .hide {
-    display: block;
-    color: black;
-  }
-  
-  div.center {
-    text-align:center;
-    top: -150px;
-  }
+footer {
+  position: fixed;
+}
 
-  p,
-  p2 {
-    font-family: "Corben";
-    font-size: 16.5px;
-  }
-  
-  a2,
-  a2:visited {
-    /* color: DodgerBlue; */
-    color: black;
-  }
+@font-face {
+  font-family: Yellowtail;
+  src: url("https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FYellowtail-Regular.ttf?v=1608923698829");
+  font-weight: bold;
+}
 
-  .LI-profile-badge {
-    overflow: hidden;
-  }
+h1 {
+  text-align: center;
+  font-family: Yellowtail;
+  font-size: 60px;
+}
 
-  section {
-    margin: 40px;
-  }
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
 
-  .slide {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-    
-  .slide1 {
-    background-image: url(
-  "https://media.geeksforgeeks.org/wp-content/uploads/20210812221217/pic1.png");
-  }
-  .slide2 {
-    background-image: url(
-  "https://media.geeksforgeeks.org/wp-content/uploads/20210812221254/pic2.png");
-  }
-  .slide3 {
-    background-image: url(
-  "https://media.geeksforgeeks.org/wp-content/uploads/20210812221322/pic3.png");
-  }
-  .arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -35px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-  #arrow-left {
-    border-width: 20px 30px 20px 0;
-    border-color: transparent #fff transparent transparent;
-    left: 0;
-    margin-left: 20px;
-  }
-    
-  #arrow-right {
-    border-width: 20px 0 20px 30px;
-    border-color: transparent transparent transparent #fff;
-    right: 0;
-    margin-right: 20px;
-  }
+h3 {
+  font-family: Yellowtail;
+  font-size: 30px;
+}
+
+myVideo.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px 30px;
+}
+
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+.topnav a {
+  float: left;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  justify-content: space-evenly;
+  z-index: 2;
+}
+
+.topnav a:hover {
+  background-color: #34ade6;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #34ade6;
+  color: white;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.right {
+  margin: 0;
+  max-width: 1500px;
+  width: 100%;
+  height: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.myDIV:hover+.hide {
+  display: block;
+  color: black;
+}
+
+div.center {
+  text-align: center;
+  top: -150px;
+}
+
+p,
+p2 {
+  font-family: "Corben";
+  font-size: 16.5px;
+}
+
+a2,
+a2:visited {
+  /* color: DodgerBlue; */
+  color: black;
+}
+
+.LI-profile-badge {
+  overflow: hidden;
+}
+
+section {
+  margin: 40px;
+}
