@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <div class="topnav">
-  <a href="../index.html">Home</a>
+  <a href="../../index.html">Home</a>
   <a href="portfolio.html">Portfolio</a>
   <a href="quotes.html">Quotes</a>
   <!-- <a href="about.html">About</a> -->
@@ -12,8 +12,9 @@
     overflow: hidden;
     font-family: 'Courier New', Courier, monospace !important;
   }
-  body {
-    background-image: url("src/Images/background.jpeg");
+
+  /* body {
+    background-image: url("./Images/background.jpeg");
     z-index: -10;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -22,65 +23,72 @@
     margin: 0;
     height: 100%;
     overflow: hidden;
+  } */
+
+  blockquote {
+    background: #f5f5f5;
+    font-size: 1em;
+    border-left: .7em solid #4E92DF;
+    margin: 1em .5em;
+    padding: .1em 1em;
+    line-height: 1.2em;
+    quotes: "\201C""\201D";
   }
 
-  .rectangle {
-    display: inline-block;
-    height: 50px;
-    /*sets height of element*/
-    background: rgba(228, 221, 221, 0.7);
-    /*sets the background of this element (here a solid colour)*/
-    transition: all 0.6s;
-    /*sets a transition (for hover effect)*/
-    padding-left: 20px;
-    /*sets 'padding'*/
-    padding-right: 20px;
-    /*sets 'padding'*/
-    line-height: 50px;
-    /*for this, it sets vertical alignment*/
-    font-family: Verdana;
-    color: currentColor;
-    font-size: 14px;
+  blockquote:before {
+    font: Georgia;
+    color: #4E92DF;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0;
+    vertical-align: -.41em;
+    padding: 0 .1em 0 .1em;
   }
-
 </style>
 
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width initial-scale=1'>
   <link rel="stylesheet" href="/style.css" type="text/css" />
-  <link rel="stylesheet" href="/media-queries.css" type="text/css" />
   <title>quotes</title>
 </head>
 <div class="quotes">
   <h1 id='favorite-quotes'><span>Favorite Quotes</span>
   </h1>
-  <i>
-    <p class="rectangle"><span>&quot;Above all, avoid falsehood, every kind of falsehood, especially
-        falseness to yourself.&quot; - Elder Zosima</span></p>
-    <!-- <p><span>“There are none happy in the world but beings who enjoy freely a vast horizon.” - Krishna</span></p> -->
-    <p class="rectangle"><span>&quot;I know of no more encouraging fact than the unquestionable ability of
-        man to elevate his life by conscious endeavor.&quot; - Thoreau</span></p>
-    <!-- <p style="font-family: Verdana"><span>&quot;Read 500 pages every day. That&#39;s how knowledge works. It builds up like compound interest.&quot; - Warren Buffett</span></p> -->
-    <p class="rectangle"><span>&quot;Nothing can make our life, or the lives of other people, more beautiful than
-        perpetual kindness.&quot; - Tolstoy </span></p>
-    <!-- <p><span>&quot;The fool, with all his other faults, has this also, he is always getting ready to live.&quot; - Epicurus</span></p> -->
-    <!-- <p><span>“To speak a second language is to have a second soul” - Charlemagne</span></p> -->
-    <!-- <p><span>“There is no permanence” - Utnapishtim</span></p> -->
-    <!-- <p style="font-family: Verdana"><span>“I am not a man, I am dynamite” - Nietzsche</span></p> -->
-    <p class="rectangle"><span>&quot;What we call the beginning is often the end. And to
-        make an end is to make a
-        beginning. The end is where we start from.&quot; - T.S. Eliot</span></p>
-    <p class="rectangle"><span>&quot;Cinnamon can be eaten, therefore the trees that yield it
-        are chopped down.
-        Everybody knows the utility of usefulness, but nobody knows the utility of uselessness.&quot; - Zhuangzi</span>
-    </p>
-    <p class="rectangle"><span>&quot;One who is truly a man should stop thinking how long he
-        will live. He
-        should thereupon consider how he might live the part of his life still before him as well as
-        possible.&quot; - Socrates</span></p>
-    <p>&nbsp;</p>
-  </i>
+  <blockquote>
+    <p style="font-family: Verdana"><span><i>Above all, avoid falsehood, every kind of falsehood, especially
+        falseness to yourself.<br><br>Elder Zosima</i></span></p>
+  </blockquote>
+  <!-- <p><span>“There are none happy in the world but beings who enjoy freely a vast horizon.” - Krishna</span></p> -->
+  <blockquote>
+    <p style="font-family: Verdana"><span><i>I know of no more encouraging fact than the unquestionable ability of
+        man to elevate his life by conscious endeavor.</i><br><br>Thoreau</span></p>
+  </blockquote>
+  <!-- <p style="font-family: Verdana"><span>&quot;Read 500 pages every day. That&#39;s how knowledge works. It builds up like compound interest.&quot; - Warren Buffett</span></p> -->
+  <blockquote>
+    <p style="font-family: Verdana"><span><i>Nothing can make our life, or the lives of other people, more beautiful than
+        perpetual kindness.</i><br><br>Tolstoy</span></p>
+  </blockquote>
+  <blockquote>
+    <p style="font-family: Verdana"><span><i>To take the immensity of the world and entrust it to the talent of a single
+        person is like hanging a weight of a thousand jun on a single branch of a tree.</i><br><br>Liu An, King of Huainan</span></p>
+  </blockquote>
+  <!-- <p><span>&quot;The fool, with all his other faults, has this also, he is always getting ready to live.&quot; - Epicurus</span></p> -->
+  <!-- <p><span>“To speak a second language is to have a second soul” - Charlemagne</span></p> -->
+  <!-- <p><span>“There is no permanence” - Utnapishtim</span></p> -->
+  <!-- <p style="font-family: Verdana"><span>“I am not a man, I am dynamite” - Nietzsche</span></p> -->
+  <!-- <p class="blockquote"><span>&quot;What we call the beginning is often the end. And to
+      make an end is to make a
+      beginning. The end is where we start from.&quot; - T.S. Eliot</span></p> -->
+  <!-- <p class="blockquote"><span>&quot;Cinnamon can be eaten, therefore the trees that yield it
+      are chopped down.
+      Everybody knows the utility of usefulness, but nobody knows the utility of uselessness.&quot; - Zhuangzi</span>
+  </p> -->
+  <!-- <p class=""><span>&quot;One who is truly a man should stop thinking how long he
+      will live. He
+      should thereupon consider how he might live the part of his life still before him as well as
+      possible.&quot; - Socrates</span></p>
+  <p>&nbsp;</p> -->
 </div>
 </div>
 </body>
