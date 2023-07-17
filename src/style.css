@@ -10,13 +10,13 @@ body {
   background-size: auto;
 }
 
-h1 {
+/* h1 {
   color: #4E92DF;
   z-index: 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .portfolio {
   position: relative;
@@ -70,15 +70,16 @@ footer {
   position: fixed;
 }
 
-@font-face {
+/* @font-face {
   font-family: Yellowtail;
   src: url("https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FYellowtail-Regular.ttf?v=1608923698829");
   font-weight: bold;
-}
+} */
 
 h1 {
   text-align: center;
-  font-family: Yellowtail;
+  /* font-family: Yellowtail; */
+  font-family: 'Courier New', Courier, monospace;
   font-size: 60px;
 }
 
@@ -88,7 +89,7 @@ h2 {
 }
 
 h3 {
-  font-family: Yellowtail;
+  /* font-family: Yellowtail; */
   font-size: 30px;
 }
 

@@ -31,18 +31,31 @@
       font-family: 'Courier New', Courier, monospace !important;
     }
   </style>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
   <title>Portfolio</title>
 </head>
 <div id='write' class='portfolio'>
-  <h1><span>Portfolio</span></h1>
+  <h2 style="text-align: center;"><span id="element"></span></h2>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var typed = new Typed('#element', {
+        strings: ["Portfolio"],
+        typeSpeed: 50,
+      });
+    });
+  </script>
   <h2><span>Philosophical Essays</span></h2>
   <ol style="list-style-type:lower-greek">
     <li><a href='../Files/FinalProject.pdf' style="font-family: Verdana"><span>On The Moral Obligation of Digital
           Education</span></a></li>
-    <li><a href='../Files/PHIL2105.pdf' style="font-family: Verdana"><span>Timing and Measurement in Plato's <i>Sophist</i></span></a></li>
+    <li><a href='../Files/PHIL2105.pdf' style="font-family: Verdana"><span>Timing and Measurement in Plato's
+          <i>Sophist</i></span></a></li>
     <li><span> </span><a href='../Files/MidtermPaper.pdf' style="font-family: Verdana"><span>Dialogues of Alyosha: The
           Incommensurability of Life</span></a></li>
-    <li><a href='../Files/Kant.pdf' style="font-family: Verdana"><span>Kant and Hume: Crossroads of Humanity</span></a></li>
+    <li><a href='../Files/Kant.pdf' style="font-family: Verdana"><span>Kant and Hume: Crossroads of Humanity</span></a>
+    </li>
   </ol>
   <p>&nbsp;</p>
   <h2><span>My Coding Projects</span></h2>
@@ -76,7 +89,7 @@
       on my experience</span></p>
   <p style="font-family: Verdana"><span>at the National Youth Science Camp learning from STEM leaders and collaborating
       with MarchForScienceNYC.</span></p>
-      <p>&nbsp;</p>
+  <p>&nbsp;</p>
   <h2><span>My Brown Video Portfolio</span></h2>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/KJBh6hTqatg" title="YouTube video player"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
