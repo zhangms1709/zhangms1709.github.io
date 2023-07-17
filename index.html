@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/src/style.css" type="text/css" />
-  <script src="script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
@@ -24,10 +23,9 @@
       padding: 2rem;
       position: relative;
       display: block;
-      text-align: center;
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
+      width: 80%;
       z-index: -1;
     }
 
@@ -38,8 +36,8 @@
       text-align: center;
       margin-left: auto;
       margin-right: auto;
-      width: 35%;
-
+      height: 50%;
+      width: 40%;
     }
 
     body {
@@ -50,63 +48,106 @@
       -o-background-size: cover;
       background-size: cover;
     }
+
+    .slideshow-container {
+      text-align: center;
+    }
+
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 
-<div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="src/Pages/portfolio.html">Portfolio</a>
-  <a href="src/Pages/quotes.html">Quotes</a>
-  <!-- <a href="about.html">About</a> -->
-</div>
-
-<h1>Hi, I'm Mason!</h1>
-
 <body>
-  <!-- <div class="image"> -->
-  <!-- <script>
-        $("#header").on("click", (e) => {
-          $("#header").css("color", "black");
-        })
-      </script> -->
-  <!-- <img src="./portrait.jpeg" alt="Image Front">
-    </div>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="src/Pages/portfolio.html">Portfolio</a>
+    <a href="src/Pages/quotes.html">Quotes</a>
+    <!-- <a href="about.html">About</a> -->
+  </div>
+  
+  <!-- <h1>Hi, I'm Mason!</h1> -->
+  <h2 style="text-align: center;"><span id="element"></span></h2>
 
-    <div class="center"> -->
-  <!-- <video playsinline autoplay muted id="myVideo" controls="true">
-        <source src="Brown.mp4" type="video/mp4">
-    </video> -->
-  <!-- </div> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var typed = new Typed('#element', {
+        strings: ["Hi, I'm Mason"],
+        typeSpeed: 50,
+      });
+    });
+  </script>
 
-  <!-- <div class="image">
-      <img src="./snowman.png" alt="Image Front">
-    </div> -->
   <section class="main">
     <div class="left">
-      <img class="footer-image" src="src/Images/portrait.jpeg" alt="Image Front">
-      <p2 class="image" style="font-family: Verdana">I'm a college junior studying Computer Science and Philosophy at
-        Brown
-        University and lifelong resident of
-        Connecticut. I love hiking rocky trails, reading magical realism novels, and
-        playing tennis year-round.
-        Feel free to contact me at my email:
-        <a style="z-index:2" href="mailto:" mason_zhang1@brown.edu>mason_zhang1@brown.edu</a>.
-      </p2>
-      <!-- <p>
-          <iframe
-            src="https://open.spotify.com/embed/album/51XjnQQ9SR8VSEpxPO9vrW"
-            width="300"
-            height="300"
-            frameborder="20"
-            allowtransparency="true"
-            allow="encrypted-media"
-          ></iframe>
-        </p> -->
-    </div>
-    </ul>
+      <img class="footer-image" src="src/Images/mzhan150.jpeg" alt="Image Front">
+      <p class="image" style="font-family: Verdana">I'm a college junior studying Computer Science and Philosophy at
+        Brown University and lifelong resident of Connecticut. I love hiking peaceful trails, reading long magical realism novels, and
+        playing tennis year-round. Feel free to contact me at my email:
+        <a style="z-index:2" href="mailto:mason_zhang1@brown.edu">mason_zhang1@brown.edu</a>.
+      </p>
     </div>
   </section>
+
+  <div class="slideshow-container">
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+    <h2>Places you might find me:</h2>
+    <div class="mySlides fade">
+      <img src="src/Images/IMG_0612Large.jpeg" alt="The Glorious SciLi">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="src/Images/IMG_1211Large.jpeg" alt="RISD Art Museum">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="src/Images/IMG_5467Large.jpeg" alt="The Philosophy Building">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="src/Images/IMG_19E8Large.jpeg" alt="John Hay Library">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="src/Images/IMG_3873Large.jpeg" alt="Tennis Courts">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="src/Images/IMG_4098Large.jpeg" alt="Musical Dress Rehearsal">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="src/Images/IMG_7906Large.jpeg" alt="Paul Guyer's Office">
+    </div>
+
+    <!-- Slideshow dots -->
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <script>
+    // Slideshow JavaScript
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
   <footer>
     <div id="footer" class="footer-image">
       <p>&nbsp;</p>
@@ -118,15 +159,6 @@
         <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
       </a>
       <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-      <div>
-        <script src="https://static-exp1.licdn.com/sc/h/3qk7aqkysw7gz575y2ma1e5ky" type="text/javascript"></script><code
-          id="__pageContext__" style="display: none;">
-        </code>
-        <script
-          src="https://static-exp1.licdn.com/sc/p/com.linkedin.badger-frontend%3Abadger-frontend-static-content%2B1.0.2/f/%2Fbadger-frontend%2Fsc-hashes%2Fsc-hashes_en_US.js"></script>
-        <script src="https://static-exp1.licdn.com/sc/h/19dd5wwuyhbk7uttxpuelttdg"></script>
-        <link rel="stylesheet" href="https://static-exp1.licdn.com/sc/h/c5izpj9x1e2q31kvb2g3w9ptv">
-      </div>
     </div>
   </footer>
 </body>
