@@ -108,6 +108,7 @@ footer {
 /* Styles for the div that wraps the text area of the card */
 .card-text-box {
   text-align: center;     /* Center-align the text */
+  color: #000;
 }
 
 h1 {
