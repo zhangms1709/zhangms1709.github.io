@@ -61,6 +61,17 @@ img {
   margin: 3vh 0;
 }
 
+.oval-image {
+  border-radius: 5%;
+  /* Make the border-radius 50% to create an oval shape */
+  overflow: hidden;
+  /* Hide any overflowing content */
+  text-align: center;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* a,
 a:visited {
   color: DodgerBlue;
