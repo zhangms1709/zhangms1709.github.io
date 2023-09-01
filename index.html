@@ -40,6 +40,18 @@
       width: 40%;
     }
 
+    .oval-image {
+      border-radius: 5%;
+      /* Make the border-radius 50% to create an oval shape */
+      overflow: hidden;
+      /* Hide any overflowing content */
+      text-align: center;
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     body {
       background-image: url("src/Images/background.jpeg");
       z-index: -10;
@@ -52,7 +64,6 @@
     .slideshow-container {
       text-align: center;
     }
-
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -65,7 +76,7 @@
     <a href="src/Pages/quotes.html">Quotes</a>
     <!-- <a href="about.html">About</a> -->
   </div>
-  
+
   <!-- <h1>Hi, I'm Mason!</h1> -->
   <h2 style="text-align: center;"><span id="element"></span></h2>
 
@@ -80,7 +91,7 @@
 
   <section class="main">
     <div class="left">
-      <img class="footer-image" src="src/Images/mzhan150.jpeg" alt="Image Front">
+      <img class="oval-image" src="src/Images/mzhan150.jpeg" alt="Image Front">
       <p class="image" style="font-family: Verdana">I'm a college junior studying Computer Science and Philosophy at
         Brown University. I seek to apply my interdisciplinary and analytical mindset to explore ML, PM, and SWE.
         In my free time, I love hiking peaceful trails, reading magical realism novels, and
