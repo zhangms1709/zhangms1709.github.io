@@ -76,6 +76,31 @@ footer {
   font-weight: bold;
 } */
 
+/* Styles for the div that wraps the entire card */
+.card {
+  box-shadow: 2px 2px 5px black;
+  border-radius: 20px;
+  width: 500px;
+  overflow: hidden;
+  display: inline-block; /* Display cards inline */
+  margin: 10px 15px 20px 15px; /* Top Right Bottom Left */
+}
+
+/* Styles for the card image (<img/) element */
+.card img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 500px;
+  border-radius: 20px;
+  margin: 0px;
+}
+
+/* Styles for the div that wraps the text area of the card */
+.card-text-box {
+  /* margin-top: -10px; */
+  text-align: center;     /* Center-align the text */
+}
+
 h1 {
   text-align: center;
   /* font-family: Yellowtail; */
@@ -91,6 +116,11 @@ h2 {
 h3 {
   /* font-family: Yellowtail; */
   font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 myVideo.center {
