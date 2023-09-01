@@ -117,6 +117,20 @@ footer {
   transform: translateY(-5px); /* Move the card up slightly on hover */
 }
 
+/* Styles for the tags */
+.card-tags {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 h1 {
   text-align: center;
   /* font-family: Yellowtail; */
