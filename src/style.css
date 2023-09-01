@@ -111,6 +111,12 @@ footer {
   color: #000;
 }
 
+/* Apply styles when hovering over the card */
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Change the box shadow on hover */
+  transform: translateY(-5px); /* Move the card up slightly on hover */
+}
+
 h1 {
   text-align: center;
   /* font-family: Yellowtail; */
