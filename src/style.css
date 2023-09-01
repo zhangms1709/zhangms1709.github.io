@@ -61,10 +61,20 @@ img {
   margin: 3vh 0;
 }
 
-a,
+/* a,
 a:visited {
   color: DodgerBlue;
+} */
+
+a {
+  color: #000; /* Change the color to your desired color */
+  text-decoration: none; /* Remove underline */
 }
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover if desired */
+}
+
 
 footer {
   position: fixed;
@@ -97,7 +107,6 @@ footer {
 
 /* Styles for the div that wraps the text area of the card */
 .card-text-box {
-  /* margin-top: -10px; */
   text-align: center;     /* Center-align the text */
 }
 
@@ -121,6 +130,11 @@ h3 {
 h4 {
   font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
+}
+
+p3 {
+  font-family: Verdana;
+  margin-bottom: 20px;
 }
 
 myVideo.center {
