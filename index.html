@@ -61,7 +61,7 @@
             }
 
             body {
-                background-image: url("Images/background.jpeg");
+                /* background-image: url("Images/background.jpeg"); */
                 z-index: -10;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
@@ -76,8 +76,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     </head>
-
-    <body>
+ 
+    <body class="md:bg-[url('Images/background.jpeg')]">
         <nav class="topnav">
             <a href="index.html">Home</a>
             <a href="Pages/portfolio.html">Portfolio</a>
@@ -86,7 +86,7 @@
             <!-- <a href="about.html">About</a> -->
         </nav>
 
-        <div class="max-w-screen-md mx-auto">
+        <div class="md:max-w-screen-md mx-auto">
             <!-- <h1>Hi, I'm Mason!</h1> -->
             <h2 style="text-align: center"><span id="element"></span></h2>
 
@@ -115,7 +115,7 @@
                         interdisciplinary, analytical mindset to explore ML, PM,
                         Cloud, and DS. In my free time, I love hiking peaceful
                         trails, reading magical realism novels, and playing
-                        tennis year-round. Feel free to contact me at
+                        tennis year-round. Feel free to contact <span class="hidden md:inline-block">me at</span>
                         <a class="z-[2]" href="mailto:mason_zhang1@brown.edu"
                             >mason_zhang1@brown.edu</a
                         >!
