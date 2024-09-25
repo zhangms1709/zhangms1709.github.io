@@ -587,12 +587,33 @@ video {
   display: none;
 }
 
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .max-w-screen-md {
   max-width: 768px;
 }
 
 .text-left {
   text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 body {
