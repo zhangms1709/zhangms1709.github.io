@@ -631,6 +631,10 @@ video {
   text-align: left;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 body {
   font-family: "Open Sans", helvetica, arial, sans-serif;
   margin: 3vw;
@@ -922,10 +926,6 @@ section {
 
   .md\:bg-\[url\(\'Images\/background\.jpeg\'\)\] {
     background-image: url('Images/background.jpeg');
-  }
-
-  .md\:text-left {
-    text-align: left;
   }
 
   .md\:text-justify {
