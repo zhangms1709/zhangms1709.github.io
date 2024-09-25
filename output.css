@@ -599,10 +599,6 @@ video {
   min-height: 100vh;
 }
 
-.max-w-screen-md {
-  max-width: 768px;
-}
-
 .flex-col {
   flex-direction: column;
 }
