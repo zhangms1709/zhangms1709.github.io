@@ -583,37 +583,48 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
 
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .max-w-screen-md {
   max-width: 768px;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.p-24 {
+  padding: 6rem;
+}
+
 .text-left {
   text-align: left;
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 body {
@@ -710,9 +721,18 @@ footer {
 /* Styles for the div that wraps the entire card */
 
 .card {
+  width: 350px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 500px;
+  }
+}
+
+.card {
   box-shadow: 2px 2px 5px black;
   border-radius: 20px;
-  width: 500px;
   overflow: hidden;
   display: inline-block;
   /* Display cards inline */
@@ -751,10 +771,16 @@ footer {
 /* Styles for the tags */
 
 .card-tags {
-  display: flex;
+  margin-bottom: 1.25rem;
+  display: none;
   justify-content: center;
-  gap: 5px;
-  margin-bottom: 20px;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .card-tags {
+    display: flex;
+  }
 }
 
 .tag {
@@ -874,6 +900,10 @@ section {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
   .md\:text-justify {
     text-align: justify;
   }
