@@ -566,6 +566,15 @@ video {
   position: relative;
 }
 
+.z-\[2\] {
+  z-index: 2;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .block {
   display: block;
 }
@@ -578,9 +587,12 @@ video {
   display: none;
 }
 
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+.max-w-screen-md {
+  max-width: 768px;
+}
+
+.text-left {
+  text-align: left;
 }
 
 body {
@@ -609,7 +621,7 @@ body {
   z-index: 11;
 }
 
-/* 
+/*
   .h1::after {
     position: absolute;
     z-index: -1;
@@ -624,20 +636,9 @@ body {
   width: 48vw;
 }
 
-.main {
-  display: flex;
-  justify-content: space-around;
-  height: 70vh;
-}
-
 #header {
   position: relative;
   text-align: center;
-}
-
-.left,
-.right {
-  width: 40vw;
 }
 
 img {
@@ -745,12 +746,12 @@ footer {
 h1 {
   text-align: center;
   /* font-family: Yellowtail; */
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 60px;
 }
 
 h2 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 30px;
 }
 
@@ -761,7 +762,7 @@ h3 {
 
 h4 {
   font-size: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 p3 {
@@ -779,7 +780,7 @@ myVideo.center {
 .topnav {
   background-color: transparent;
   overflow: hidden;
-  font-family: 'Courier New', Courier, monospace !important;
+  font-family: "Courier New", Courier, monospace !important;
   /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; */
 }
 
@@ -821,7 +822,7 @@ footer {
   display: none;
 }
 
-.myDIV:hover+.hide {
+.myDIV:hover + .hide {
   display: block;
   color: black;
 }
@@ -849,4 +850,10 @@ a2:visited {
 
 section {
   margin: 40px;
+}
+
+@media (min-width: 768px) {
+  .md\:text-justify {
+    text-align: justify;
+  }
 }

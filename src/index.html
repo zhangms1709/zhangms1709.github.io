@@ -1,179 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Mason Zhang</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/src/output.css" type="text/css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Cookie"
+            rel="stylesheet"
+        />
+        <link
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="shortcut icon"
+            href="https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FScreen%20Shot%202563-12-30%20at%201.32.15%20PM.ico?v=1609353311347"
+        />
+        <style>
+            .topnav {
+                background-color: transparent;
+                overflow: hidden;
+                font-family: "Courier New", Courier, monospace !important;
+            }
 
-<head>
-  <title>Mason Zhang</title>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/src/output.css" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-  <link rel="shortcut icon"
-    href="https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FScreen%20Shot%202563-12-30%20at%201.32.15%20PM.ico?v=1609353311347" />
-  <style>
-    .topnav {
-      background-color: transparent;
-      overflow: hidden;
-      font-family: 'Courier New', Courier, monospace !important;
-    }
+            .image {
+                padding: 2rem;
+                position: relative;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+                z-index: -1;
+            }
 
-    .image {
-      padding: 2rem;
-      position: relative;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 80%;
-      z-index: -1;
-    }
+            .footer-image {
+                padding: 2rem;
+                position: relative;
+                display: block;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                height: 50%;
+                width: 40%;
+            }
 
-    .footer-image {
-      padding: 2rem;
-      position: relative;
-      display: block;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      height: 50%;
-      width: 40%;
-    }
+            .oval-image {
+                border-radius: 5%;
+                /* Make the border-radius 50% to create an oval shape */
+                overflow: hidden;
+                /* Hide any overflowing content */
+                text-align: center;
+                position: relative;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-    .oval-image {
-      border-radius: 5%;
-      /* Make the border-radius 50% to create an oval shape */
-      overflow: hidden;
-      /* Hide any overflowing content */
-      text-align: center;
-      position: relative;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+            body {
+                background-image: url("Images/background.jpeg");
+                z-index: -10;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
 
-    body {
-      background-image: url("src/Images/background.jpeg");
-      z-index: -10;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
+            .slideshow-container {
+                text-align: center;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    </head>
 
-    .slideshow-container {
-      text-align: center;
-    }
-  </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-</head>
+    <body>
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="Pages/portfolio.html">Portfolio</a>
+            <a href="Pages/quotes.html">Quotes</a>
+            <a href="Pages/blog.html">Blog</a>
+            <!-- <a href="about.html">About</a> -->
+        </nav>
 
-<body>
-  <div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="Pages/portfolio.html">Portfolio</a>
-    <a href="Pages/quotes.html">Quotes</a>
-    <a href="Pages/blog.html">Blog</a>
-    <!-- <a href="about.html">About</a> -->
-  </div>
+        <div class="max-w-screen-md mx-auto">
+            <!-- <h1>Hi, I'm Mason!</h1> -->
+            <h2 style="text-align: center"><span id="element"></span></h2>
 
-  <!-- <h1>Hi, I'm Mason!</h1> -->
-  <h2 style="text-align: center;"><span id="element"></span></h2>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var typed = new Typed("#element", {
+                        strings: ["Hi, I'm Mason"],
+                        typeSpeed: 50,
+                    });
+                });
+            </script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var typed = new Typed('#element', {
-        strings: ["Hi, I'm Mason"],
-        typeSpeed: 50,
-      });
-    });
-  </script>
+            <section class="main">
+                <div>
+                    <img
+                        class="oval-image"
+                        src="Images/mzhan150.jpeg"
+                        alt="Image Front"
+                    />
+                    <p
+                        style="font-family: Verdana"
+                        class="image text-left md:text-justify"
+                    >
+                        I'm a college senior studying Computer Science and
+                        Philosophy at Brown University. I seek to apply my
+                        interdisciplinary, analytical mindset to explore ML, PM,
+                        Cloud, and DS. In my free time, I love hiking peaceful
+                        trails, reading magical realism novels, and playing
+                        tennis year-round. Feel free to contact me at
+                        <a class="z-[2]" href="mailto:mason_zhang1@brown.edu"
+                            >mason_zhang1@brown.edu</a
+                        >!
+                    </p>
+                </div>
+            </section>
 
-  <section class="main">
-    <div class="left">
-      <img class="oval-image" src="src/Images/mzhan150.jpeg" alt="Image Front">
-      <p style="font-family: Verdana" class="text-red-500 image">I'm a college senior studying Computer Science and Philosophy at
-        Brown University. I seek to apply my interdisciplinary, analytical mindset to explore ML, PM, Cloud, and DS.
-        In my free time, I love hiking peaceful trails, reading magical realism novels, and
-        playing tennis year-round. Feel free to contact me at
-        <a style="z-index:2" href="mailto:mason_zhang1@brown.edu">mason_zhang1@brown.edu</a>!
-      </p>
-    </div>
-  </section>
+            <div class="slideshow-container">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
 
-  <div class="slideshow-container">
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
+                <h2>Places you might find me:</h2>
+                <div class="mySlides fade">
+                    <img
+                        class="oval-image"
+                        src="Images/IMG_0612Large.jpeg"
+                        alt="The Glorious SciLi"
+                    />
+                </div>
 
-    <h2>Places you might find me:</h2>
-    <div class="mySlides fade">
-      <img class="oval-image" src="src/Images/IMG_0612Large.jpeg" alt="The Glorious SciLi">
-    </div>
+                <div class="mySlides fade">
+                    <img
+                        class="oval-image"
+                        src="Images/IMG_1211Large.jpeg"
+                        alt="RISD Art Museum"
+                    />
+                </div>
 
-    <div class="mySlides fade">
-      <img class="oval-image" src="src/Images/IMG_1211Large.jpeg" alt="RISD Art Museum">
-    </div>
+                <div class="mySlides fade">
+                    <img
+                        class="oval-image"
+                        src="Images/IMG_5467Large.jpeg"
+                        alt="The Philosophy Building"
+                    />
+                </div>
 
-    <div class="mySlides fade">
-      <img class="oval-image" src="src/Images/IMG_5467Large.jpeg" alt="The Philosophy Building">
-    </div>
+                <div class="mySlides fade">
+                    <img
+                        class="oval-image"
+                        src="Images/IMG_19E8Large.jpeg"
+                        alt="John Hay Library"
+                    />
+                </div>
 
-    <div class="mySlides fade">
-      <img class="oval-image" src="src/Images/IMG_19E8Large.jpeg" alt="John Hay Library">
-    </div>
+                <div class="mySlides fade">
+                    <img
+                        class="oval-image"
+                        src="Images/IMG_3873Large.jpeg"
+                        alt="Tennis Courts"
+                    />
+                </div>
 
-    <div class="mySlides fade">
-      <img class="oval-image" src="src/Images/IMG_3873Large.jpeg" alt="Tennis Courts">
-    </div>
+                <div class="mySlides fade">
+                    <img
+                        class="oval-image"
+                        src="Images/IMG_4098Large.jpeg"
+                        alt="Musical Dress Rehearsal"
+                    />
+                </div>
 
-    <div class="mySlides fade">
-      <img class="oval-image" src="src/Images/IMG_4098Large.jpeg" alt="Musical Dress Rehearsal">
-    </div>
+                <div class="mySlides fade">
+                    <img
+                        class="oval-image"
+                        src="Images/IMG_7906Large.jpeg"
+                        alt="Paul Guyer's Office"
+                    />
+                </div>
 
-    <div class="mySlides fade">
-      <img class="oval-image" src="src/Images/IMG_7906Large.jpeg" alt="Paul Guyer's Office">
-    </div>
+                <!-- Slideshow dots -->
+                <div style="text-align: center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
 
-    <!-- Slideshow dots -->
-    <div style="text-align:center">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-  </div>
+        <script>
+            // Slideshow JavaScript
+            var slideIndex = 0;
+            showSlides();
 
-  <script>
-    // Slideshow JavaScript
-    var slideIndex = 0;
-    showSlides();
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
 
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-  </script>
-
-  <footer>
-    <div id="footer" class="footer-image">
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <a target="_blank" href="https://www.instagram.com/zhangm_sky/">
-        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/in/masonzhang9?trk=profile-badge">
-        <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
-      </a>
-      <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    </div>
-  </footer>
-</body>
-
+        <footer>
+            <div id="footer" class="footer-image">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <a target="_blank" href="https://www.instagram.com/zhangm_sky/">
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </a>
+                <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/masonzhang9?trk=profile-badge"
+                >
+                    <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                </a>
+                <script
+                    src="https://platform.linkedin.com/badges/js/profile.js"
+                    async
+                    defer
+                    type="text/javascript"
+                ></script>
+            </div>
+        </footer>
+    </body>
 </html>
