@@ -91,9 +91,9 @@ footer {
 
 /* Styles for the div that wraps the entire card */
 .card {
+    @apply w-[350px] md:w-[500px];
     box-shadow: 2px 2px 5px black;
     border-radius: 20px;
-    width: 500px;
     overflow: hidden;
     display: inline-block; /* Display cards inline */
     margin: 10px 15px 20px 15px; /* Top Right Bottom Left */
@@ -122,10 +122,7 @@ footer {
 
 /* Styles for the tags */
 .card-tags {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    margin-bottom: 20px;
+    @apply hidden md:flex justify-center gap-2 mb-5;
 }
 
 .tag {
