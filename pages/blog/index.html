@@ -1,157 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<div class="topnav">
-  <a href="/">Home</a>
-  <a href="/pages/portfolio/">Portfolio</a>
-  <a href="/pages/quotes/">Quotes</a>
-  <a href="/pages/blog/">Blog</a>
-  <!-- <a href="/pages/about/">About</a> -->
-</div>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width initial-scale=1">
-  <link rel="stylesheet" href="/Styles/output.css" type="text/css">
-  <link rel="shortcut icon"
-    href="https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FScreen%20Shot%202563-12-30%20at%201.32.15%20PM.ico?v=1609353311347">
-  <style type="text/css">
-    ol {
-      list-style-type: none
-    }
-
-    body {
-      z-index: -10;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: auto;
-    }
-
-    .topnav {
-      background-color: transparent;
-      overflow: hidden;
-      font-family: 'Courier New', Courier, monospace !important;
-    }
-  </style>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-  <title>Blog</title>
-    <meta name="description" content="Personal website of zhangms1709.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <meta name="description" content="Personal website of Mason Zhang.">
     <link rel="canonical" href="https://zhangms1709.github.io/pages/blog/">
     <meta property="og:title" content="Blog">
-    <meta property="og:description" content="Personal website of zhangms1709.">
+    <meta property="og:description" content="Personal website of Mason Zhang.">
     <meta property="og:url" content="https://zhangms1709.github.io/pages/blog/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-  </head>
-<div id="write" class="portfolio">
-  <!-- <h2><span id="element"></span></h2> -->
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var typed = new Typed('#element', {
-        strings: ["AI Ethics Blog"],
-        typeSpeed: 50,
-      });
-    });
-  </script>
-  <p class="text-justify">This blog contains my musings, thoughts, and discussions on topics relating to the vast literature on the philosophy of AI (robots, responsibility, consciousness, labor, explainability, fairness) mentored by Prof. <a href="http://julianetter.de/">Julia Netter</a>.</p>
-      <div class="card">
-        <a href="/pages/control/">
-          <div>
-            <img loading="lazy" class="curr" src="/Images/tracks.jpeg" alt="">
-          </div>
+    <link rel="stylesheet" href="/styles/output.css" type="text/css">
+    <link rel="shortcut icon"
+        href="https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FScreen%20Shot%202563-12-30%20at%201.32.15%20PM.ico?v=1609353311347">
+</head>
 
-          <div class="card-text-box">
-            <h4>The Control Condition</h4>
-          </div>
-        </a>
-          <div class="card-tags">
-            <span class="tag">Ethics</span>
-            <span class="tag">Consciousness</span>
-          </div>
-      </div>
+<body>
+    <nav class="topnav">
+        <a href="/">Home</a>
+        <a href="/pages/portfolio/">Portfolio</a>
+        <a href="/pages/quotes/">Quotes</a>
+        <a href="/pages/blog/" aria-current="page">Blog</a>
+    </nav>
 
-      <div class="card">
-        <a href="/pages/forster/">
-          <div>
-            <img loading="lazy" class="curr" src="/Images/Gowy-icaro-prado.jpeg" alt="">
-          </div>
+    <div id="write" class="portfolio">
+        <p class="text-justify">This blog contains my musings, thoughts, and discussions on topics relating to the vast literature on the philosophy of AI (robots, responsibility, consciousness, labor, explainability, fairness) mentored by Prof. <a href="http://julianetter.de/">Julia Netter</a>.</p>
 
-          <div class="card-text-box">
-            <h4>Literature and Technofuturism</h4>
-          </div>
-        </a>
-          <div class="card-tags">
-            <span class="tag">Futurism</span>
-            <span class="tag">History</span>
-          </div>
-      </div>
+        <div class="card">
+            <a href="/pages/control/">
+                <div>
+                    <img loading="lazy" class="curr" src="/images/tracks.jpeg" alt="">
+                </div>
+                <div class="card-text-box">
+                    <h4>The Control Condition</h4>
+                </div>
+            </a>
+            <div class="card-tags">
+                <span class="tag">Ethics</span>
+                <span class="tag">Consciousness</span>
+            </div>
+        </div>
 
-      <div class="card">
-        <a href="/pages/frege/">
-          <div>
-            <img loading="lazy" class="curr" src="/Images/frege.png" alt="">
-          </div>
+        <div class="card">
+            <a href="/pages/forster/">
+                <div>
+                    <img loading="lazy" class="curr" src="/images/Gowy-icaro-prado.jpeg" alt="">
+                </div>
+                <div class="card-text-box">
+                    <h4>Literature and Technofuturism</h4>
+                </div>
+            </a>
+            <div class="card-tags">
+                <span class="tag">Futurism</span>
+                <span class="tag">History</span>
+            </div>
+        </div>
 
-          <div class="card-text-box">
-            <h4>Off the Beaten Path</h4>
-          </div>
-        </a>
-          <div class="card-tags">
-            <span class="tag">Deductive Logic</span>
-            <span class="tag">Pluralism</span>
-          </div>
-      </div>
+        <div class="card">
+            <a href="/pages/frege/">
+                <div>
+                    <img loading="lazy" class="curr" src="/images/frege.png" alt="">
+                </div>
+                <div class="card-text-box">
+                    <h4>Off the Beaten Path</h4>
+                </div>
+            </a>
+            <div class="card-tags">
+                <span class="tag">Deductive Logic</span>
+                <span class="tag">Pluralism</span>
+            </div>
+        </div>
 
-      <div class="card">
-        <a href="/pages/world/">
-          <div>
-            <img loading="lazy" class="curr" src="/Images/earth.jpg" alt="">
-          </div>
+        <div class="card">
+            <a href="/pages/world/">
+                <div>
+                    <img loading="lazy" class="curr" src="/images/earth.jpg" alt="">
+                </div>
+                <div class="card-text-box">
+                    <h4>On the creation of digital worlds</h4>
+                </div>
+            </a>
+            <div class="card-tags">
+                <span class="tag">Metaphysics</span>
+                <span class="tag">Reductionism</span>
+            </div>
+        </div>
 
-          <div class="card-text-box">
-            <h4>On the creation of digital worlds</h4>
-          </div>
-        </a>
-          <div class="card-tags">
-            <span class="tag">Metaphysics</span>
-            <span class="tag">Reductionism</span>
-          </div>
-      </div>
+        <div class="card">
+            <a href="/pages/deepfake/">
+                <div>
+                    <img loading="lazy" class="curr" src="/images/mask.jpg" alt="">
+                </div>
+                <div class="card-text-box">
+                    <h4>"I am the AI"</h4>
+                </div>
+            </a>
+            <div class="card-tags">
+                <span class="tag">Humanism</span>
+                <span class="tag">Ethics</span>
+            </div>
+        </div>
 
-      <div class="card">
-        <a href="/pages/deepfake/">
-          <div>
-            <img loading="lazy" class="curr" src="/Images/mask.jpg" alt="">
-          </div>
-
-          <div class="card-text-box">
-            <h4>"I am the AI"</h4>
-          </div>
-        </a>
-          <div class="card-tags">
-            <span class="tag">Humanism</span>
-            <span class="tag">Ethics</span>
-          </div>
-      </div>
-
-      <div class="card">
-        <a href="/pages/robot/">
-          <div>
-            <img loading="lazy" class="curr" src="/Images/robots.jpg" alt="">
-          </div>
-
-          <div class="card-text-box">
-            <h4>Robot Kings</h4>
-          </div>
-        </a>
-          <div class="card-tags">
-            <span class="tag">Plato</span>
-            <span class="tag">Political Philosophy</span>
-          </div>
-      </div>
-
-</div>
+        <div class="card">
+            <a href="/pages/robot/">
+                <div>
+                    <img loading="lazy" class="curr" src="/images/robots.jpg" alt="">
+                </div>
+                <div class="card-text-box">
+                    <h4>Robot Kings</h4>
+                </div>
+            </a>
+            <div class="card-tags">
+                <span class="tag">Plato</span>
+                <span class="tag">Political Philosophy</span>
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>

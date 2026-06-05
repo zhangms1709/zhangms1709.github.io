@@ -2,115 +2,50 @@
 <html lang="en">
 
 <head>
-  <title>Quotes | Mason Zhang</title>
-  <link rel="shortcut icon"
-    href="https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FScreen%20Shot%202563-12-30%20at%201.32.15%20PM.ico?v=1609353311347">
-    <meta name="description" content="Personal website of zhangms1709.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quotes | Mason Zhang</title>
+    <meta name="description" content="Personal website of Mason Zhang.">
     <link rel="canonical" href="https://zhangms1709.github.io/pages/quotes/">
-    <meta property="og:title" content="quotes">
-    <meta property="og:description" content="Personal website of zhangms1709.">
+    <meta property="og:title" content="Quotes">
+    <meta property="og:description" content="Personal website of Mason Zhang.">
     <meta property="og:url" content="https://zhangms1709.github.io/pages/quotes/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-  </head>
-<div class="topnav">
-  <a href="/">Home</a>
-  <a href="/pages/portfolio/">Portfolio</a>
-  <a href="/pages/quotes/">Quotes</a>
-  <a href="/pages/blog/">Blog</a>
-  <!-- <a href="/pages/about/">About</a> -->
-</div>
-<style>
-  .topnav {
-    background-color: transparent;
-    overflow: hidden;
-    font-family: 'Courier New', Courier, monospace !important;
-  }
 
-  /* body {
-    background-image: url("./Images/background.jpeg");
-    z-index: -10;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-  } */
+    <link rel="stylesheet" href="/styles/output.css" type="text/css">
+    <link rel="shortcut icon"
+        href="https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FScreen%20Shot%202563-12-30%20at%201.32.15%20PM.ico?v=1609353311347">
+</head>
 
-  blockquote {
-    background: #f5f5f5;
-    font-size: 1em;
-    border-left: .7em solid #4E92DF;
-    margin: 1em .5em;
-    padding: .1em 1em;
-    line-height: 1.2em;
-    quotes: "\201C" "\201D";
-    border-radius: 5%;
-  }
+<body>
+    <nav class="topnav">
+        <a href="/">Home</a>
+        <a href="/pages/portfolio/">Portfolio</a>
+        <a href="/pages/quotes/" aria-current="page">Quotes</a>
+        <a href="/pages/blog/">Blog</a>
+    </nav>
 
-  blockquote:before {
-    font: Georgia;
-    color: #4E92DF;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0;
-    vertical-align: -.41em;
-    padding: 0 .1em 0 .1em;
-    border-radius: 5%;
-  }
-</style>
+    <div class="quotes">
+        <div class="grid gap-4">
+            <blockquote>
+                <p>Above all, avoid falsehood, every kind of falsehood, especially falseness to yourself.<br><br>Dostoevsky</p>
+            </blockquote>
+            <blockquote>
+                <p>I know of no more encouraging fact than the unquestionable ability of man to elevate his life by conscious endeavor.<br><br>Thoreau</p>
+            </blockquote>
+            <blockquote>
+                <p>Nothing can make our life, or the lives of other people, more beautiful than perpetual kindness.<br><br>Tolstoy</p>
+            </blockquote>
+            <blockquote>
+                <p>Good fortune becomes calamity, calamity becomes good fortune; their transformations are limitless, so profound they cannot be fathomed.<br><br>Liu An, King of Huainan</p>
+            </blockquote>
+        </div>
+    </div>
 
-<head>
-  <title>Quotes | Mason Zhang</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width initial-scale=1">
-  <link rel="stylesheet" href="/Styles/output.css" type="text/css">
-  <title>quotes</title>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <meta name="description" content="Personal website of zhangms1709.">
-    <link rel="canonical" href="https://zhangms1709.github.io/pages/quotes/">
-    <meta property="og:title" content="quotes">
-    <meta property="og:description" content="Personal website of zhangms1709.">
-    <meta property="og:url" content="https://zhangms1709.github.io/pages/quotes/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-  </head>
-<div class="quotes">
-  <!-- <h2 style="text-align: center;"><span id="element"></span></h2> -->
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var typed = new Typed('#element', {
-        strings: ["Favorite quotes"],
-        typeSpeed: 50,
-      });
-    });
-  </script>
-  <div class="grid gap-4">
-  <blockquote>
-    <p><span>Above all, avoid falsehood, every kind of falsehood, especially
-        falseness to yourself.<br><br>Dostoevsky</span></p>
-  </blockquote>
-  <blockquote>
-    <p><span>I know of no more encouraging fact than the unquestionable ability of
-        man to elevate his life by conscious endeavor.<br><br>Thoreau</span></p>
-  </blockquote>
-  <blockquote>
-    <p><span>Nothing can make our life, or the lives of other people, more beautiful than
-        perpetual kindness.<br><br>Tolstoy</span></p>
-  </blockquote>
-  <blockquote>
-    <p><span>Good fortune becomes calamity, calamity becomes good fortune; their
-        transformations are limitless, so profound they cannot be fathomed.
-        <br><br>Liu An, King of Huainan</span></p>
-  </blockquote>
-</div>
-</div>
-
-<div>
-  <img loading="lazy" src="/Images/daoist.png" alt="">
-</div>
+    <div>
+        <img loading="lazy" src="/images/daoist.png" alt="">
+    </div>
+</body>
 
 </html>

@@ -25,3 +25,15 @@ jobs:
           node-version: '20'
       - name: Validate HTML
         run: npx --yes html-validate './**/*.html'
+
+  case-sensitive-paths:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify local refs resolve with exact case (GitHub Pages is case-sensitive)
+        run: python scripts/check_paths.py
+      - name: Verify HTML structural sanity
+        run: python scripts/check_html.py

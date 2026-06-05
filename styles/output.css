@@ -846,12 +846,8 @@ myVideo.center {
   z-index: 2;
 }
 
-.topnav a:hover {
-  background-color: #34ade6;
-  color: black;
-}
-
-.topnav a.active {
+.topnav a:hover,
+.topnav a[aria-current="page"] {
   background-color: #34ade6;
   color: white;
 }
@@ -920,11 +916,56 @@ section {
     max-width: 768px;
   }
 
-  .md\:bg-\[url\(\'Images\/background\.jpeg\'\)\] {
-    background-image: url('Images/background.jpeg');
+  .md\:bg-\[url\(\'\/images\/background\.jpeg\'\)\] {
+    background-image: url('/images/background.jpeg');
   }
 
   .md\:text-justify {
     text-align: justify;
   }
+}
+
+/* ---------- Blog post body (shared) ---------- */
+
+.blog-post {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-post .content {
+  width: 60%;
+  margin: 0 auto;
+  font-family: "Verdana", sans-serif;
+  padding: 20px;
+}
+
+.blog-post .content h2 {
+  text-align: center;
+}
+
+.blog-post .content p {
+  text-indent: 50px;
+}
+
+/* ---------- Quotes ---------- */
+
+blockquote {
+  background: #f5f5f5;
+  font-size: 1em;
+  border-left: 0.7em solid #4e92df;
+  margin: 1em 0.5em;
+  padding: 0.1em 1em;
+  line-height: 1.2em;
+  quotes: "\201C" "\201D";
+  border-radius: 5%;
+}
+
+blockquote::before {
+  color: #4e92df;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0;
+  vertical-align: -0.41em;
+  padding: 0 0.1em;
 }

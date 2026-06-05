@@ -1,0 +1,15 @@
+{
+  "name": "zhangms1709.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal site of Mason Zhang. Static HTML/CSS deployed to GitHub Pages.",
+  "scripts": {
+    "build:css": "tailwindcss -i ./styles/style.css -o ./styles/output.css --minify",
+    "watch:css": "tailwindcss -i ./styles/style.css -o ./styles/output.css --watch",
+    "validate": "npx --yes html-validate \"./**/*.html\"",
+    "serve": "npx --yes http-server -c-1 -p 8080 ."
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
