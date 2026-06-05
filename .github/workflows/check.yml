@@ -1,0 +1,27 @@
+name: Site checks
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links with lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --exclude-mail --accept 200,206,429 './**/*.html'
+          fail: true
+
+  html-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate HTML
+        run: npx --yes html-validate './**/*.html'

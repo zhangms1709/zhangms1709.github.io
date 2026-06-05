@@ -1,0 +1,9 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node / Tailwind build (if you set one up later)
+node_modules/
+npm-debug.log*
