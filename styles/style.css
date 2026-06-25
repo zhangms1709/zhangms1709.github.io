@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ---------- Base ---------- */
+/* ============================================================
+   Base
+   ============================================================ */
 
 body {
     font-family: "Open Sans", helvetica, arial, sans-serif;
@@ -22,18 +24,27 @@ a:hover {
     text-decoration: underline;
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #34ade6;
+    outline-offset: 2px;
+}
+
 img {
     height: 40vh;
     width: auto;
     margin: 3vh 0;
 }
 
-/* ---------- Typography ---------- */
+/* ============================================================
+   Typography
+   ============================================================ */
 
 h1 {
     text-align: center;
     font-family: "Courier New", Courier, monospace;
     font-size: 60px;
+    margin: 0.5em 0;
 }
 
 h2 {
@@ -59,7 +70,9 @@ p {
     font-size: 16.5px;
 }
 
-/* ---------- Layout helpers ---------- */
+/* ============================================================
+   Layout helpers
+   ============================================================ */
 
 .portfolio {
     position: relative;
@@ -80,7 +93,21 @@ section {
     color: black;
 }
 
-/* ---------- Top navigation ---------- */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ============================================================
+   Top navigation
+   ============================================================ */
 
 .topnav {
     background-color: transparent;
@@ -95,7 +122,6 @@ section {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    z-index: 2;
 }
 
 .topnav a:hover,
@@ -104,7 +130,9 @@ section {
     color: white;
 }
 
-/* ---------- Image variants ---------- */
+/* ============================================================
+   Image variants
+   ============================================================ */
 
 .image {
     padding: 2rem;
@@ -113,7 +141,6 @@ section {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    z-index: -1;
 }
 
 .oval-image {
@@ -126,7 +153,9 @@ section {
     margin-right: auto;
 }
 
-/* ---------- Footer ---------- */
+/* ============================================================
+   Footer
+   ============================================================ */
 
 footer {
     position: relative;
@@ -141,21 +170,54 @@ footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    height: 50%;
     width: 40%;
 }
 
-.LI-profile-badge {
-    overflow: hidden;
+.footer-image a {
+    display: inline-block;
+    margin: 0 0.6rem;
+    color: #000;
+    transition: transform 150ms ease, color 150ms ease;
 }
 
-/* ---------- Slideshow on home page ---------- */
+.footer-image a:hover,
+.footer-image a:focus-visible {
+    color: #34ade6;
+    transform: translateY(-2px);
+}
+
+.footer-image svg {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* ============================================================
+   Home-page slideshow
+   ============================================================ */
 
 .slideshow-container {
     text-align: center;
 }
 
-/* ---------- Cards (used on blog index + portfolio) ---------- */
+.mySlides {
+    display: none;
+    animation: fade 1.5s ease-in;
+}
+
+.mySlides.is-active {
+    display: block;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to   { opacity: 1; }
+}
+
+/* ============================================================
+   Cards (blog index + portfolio)
+   ============================================================ */
 
 .card {
     @apply w-[350px] md:w-[500px];
@@ -196,7 +258,9 @@ footer {
     font-family: Verdana, sans-serif;
 }
 
-/* ---------- Blog post body (shared across all /pages/{control,world,frege,forster,robot,deepfake}/) ---------- */
+/* ============================================================
+   Blog post body
+   ============================================================ */
 
 .blog-post {
     text-align: left;
@@ -211,6 +275,7 @@ footer {
     padding: 20px;
 }
 
+.blog-post .content h1,
 .blog-post .content h2 {
     text-align: center;
 }
@@ -219,7 +284,16 @@ footer {
     text-indent: 50px;
 }
 
-/* ---------- Quotes page ---------- */
+@media (max-width: 768px) {
+    .blog-post .content {
+        width: 92%;
+        padding: 12px;
+    }
+}
+
+/* ============================================================
+   Quotes page
+   ============================================================ */
 
 blockquote {
     background: #f5f5f5;
@@ -239,4 +313,10 @@ blockquote::before {
     line-height: 0;
     vertical-align: -0.41em;
     padding: 0 0.1em;
+}
+
+.quotes-link {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 1em;
 }

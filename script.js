@@ -1,16 +1,44 @@
-let slideIndex = 0;
+// Home-page slideshow. Cycles every INTERVAL_MS, pauses while the tab is hidden.
+(() => {
+    const INTERVAL_MS = 3000;
 
-function showSlides() {
-  const slides = document.getElementsByClassName("mySlides");
-  if (slides.length === 0) return;
+    const start = () => {
+        const slides = document.querySelectorAll('.mySlides');
+        if (slides.length === 0) return;
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1; }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 2000);
-}
+        let index = 0;
+        let timer = 0;
 
-document.addEventListener("DOMContentLoaded", showSlides);
+        const show = (i) => {
+            slides.forEach((slide, idx) => {
+                slide.classList.toggle('is-active', idx === i);
+            });
+        };
+        const tick = () => {
+            index = (index + 1) % slides.length;
+            show(index);
+        };
+        const play = () => {
+            if (timer) return;
+            timer = window.setInterval(tick, INTERVAL_MS);
+        };
+        const pause = () => {
+            if (!timer) return;
+            window.clearInterval(timer);
+            timer = 0;
+        };
+
+        show(0);
+        play();
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) pause(); else play();
+        });
+    };
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', start);
+    } else {
+        start();
+    }
+})();

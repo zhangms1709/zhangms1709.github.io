@@ -2,8 +2,15 @@ name: Site checks
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [master, main]
   pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
 
 jobs:
   link-check:
@@ -23,8 +30,29 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: npm
       - name: Validate HTML
         run: npx --yes html-validate './**/*.html'
+
+  css-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - name: Install Tailwind
+        run: npm install --no-audit --no-fund
+      - name: Build CSS
+        run: npm run build:css
+      - name: Fail if committed output.css is stale
+        run: |
+          if ! git diff --quiet -- styles/output.css; then
+            echo "::error::styles/output.css is out of date — run \`npm run build:css\` and commit the result."
+            git --no-pager diff -- styles/output.css | head -40
+            exit 1
+          fi
 
   case-sensitive-paths:
     runs-on: ubuntu-latest

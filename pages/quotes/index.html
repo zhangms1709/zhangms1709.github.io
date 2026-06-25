@@ -2,54 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#34ade6">
     <title>Quotes | Mason Zhang</title>
-    <meta name="description" content="Personal website of Mason Zhang.">
+    <meta name="description" content="Favorite quotes from Dostoevsky, Thoreau, Tolstoy, and others.">
     <link rel="canonical" href="https://zhangms1709.github.io/pages/quotes/">
-    <meta property="og:title" content="Quotes">
-    <meta property="og:description" content="Personal website of Mason Zhang.">
+    <meta property="og:title" content="Quotes | Mason Zhang">
+    <meta property="og:description" content="Favorite quotes from Dostoevsky, Thoreau, Tolstoy, and others.">
     <meta property="og:url" content="https://zhangms1709.github.io/pages/quotes/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://zhangms1709.github.io/images/daoist.png">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="stylesheet" href="/styles/output.css" type="text/css">
-    <link rel="shortcut icon"
-        href="https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FScreen%20Shot%202563-12-30%20at%201.32.15%20PM.ico?v=1609353311347">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3EM%3C/text%3E%3C/svg%3E">
+
+    <link rel="stylesheet" href="/styles/output.css">
 </head>
 
 <body>
-    <nav class="topnav">
+    <a href="#main-content" class="visually-hidden">Skip to main content</a>
+
+    <nav class="topnav" aria-label="Primary">
         <a href="/">Home</a>
         <a href="/pages/portfolio/">Portfolio</a>
         <a href="/pages/quotes/" aria-current="page">Quotes</a>
         <a href="/pages/blog/">Blog</a>
     </nav>
 
-    <div class="quotes">
-        <h2 class="text-center">Favorite Quotes</h2>
+    <main id="main-content" class="quotes">
+        <h1>Favorite Quotes</h1>
         <div class="grid gap-4">
             <blockquote>
-                <p>Above all, avoid falsehood, every kind of falsehood, especially falseness to yourself.<br><br>Dostoevsky</p>
+                <p>Above all, avoid falsehood, every kind of falsehood, especially falseness to yourself.</p>
+                <footer>— Dostoevsky</footer>
             </blockquote>
             <blockquote>
-                <p>I know of no more encouraging fact than the unquestionable ability of man to elevate his life by conscious endeavor.<br><br>Thoreau</p>
+                <p>I know of no more encouraging fact than the unquestionable ability of man to elevate his life by conscious endeavor.</p>
+                <footer>— Thoreau</footer>
             </blockquote>
             <blockquote>
-                <p>Nothing can make our life, or the lives of other people, more beautiful than perpetual kindness.<br><br>Tolstoy</p>
+                <p>Nothing can make our life, or the lives of other people, more beautiful than perpetual kindness.</p>
+                <footer>— Tolstoy</footer>
             </blockquote>
             <blockquote>
-                <p>Good fortune becomes calamity, calamity becomes good fortune; their transformations are limitless, so profound they cannot be fathomed.<br><br>Liu An, King of Huainan</p>
+                <p>Good fortune becomes calamity, calamity becomes good fortune; their transformations are limitless, so profound they cannot be fathomed.</p>
+                <footer>— Liu An, King of Huainan</footer>
             </blockquote>
         </div>
-    </div>
 
-    <div>
-        <img loading="lazy" src="/images/daoist.png" alt="">
-        <p style="text-align:center; font-family: 'Courier New', Courier, monospace; margin-top: 1em;">
-            <a href="/pages/daodejing/">道德經 — read the Dao De Jing with hover-to-translate →</a>
-        </p>
-    </div>
+        <figure>
+            <img loading="lazy" decoding="async" src="/images/daoist.png" alt="Daoist illustration">
+            <figcaption class="quotes-link">
+                <a href="/pages/daodejing/">道德經 — read the Dao De Jing with hover-to-translate →</a>
+            </figcaption>
+        </figure>
+    </main>
 </body>
 
 </html>

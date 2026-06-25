@@ -3,92 +3,95 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#34ade6">
     <title>Mason Zhang</title>
-    <meta name="description" content="Personal website of Mason Zhang.">
+    <meta name="description" content="Personal website of Mason Zhang — Brown University senior in Computer Science and Philosophy. ML, Cloud, Data Science.">
     <link rel="canonical" href="https://zhangms1709.github.io/">
     <meta property="og:title" content="Mason Zhang">
-    <meta property="og:description" content="Personal website of Mason Zhang.">
+    <meta property="og:description" content="Personal website of Mason Zhang — Brown University senior in Computer Science and Philosophy.">
     <meta property="og:url" content="https://zhangms1709.github.io/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://zhangms1709.github.io/images/mzhan150.jpeg">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://zhangms1709.github.io/images/mzhan150.jpeg">
 
-    <link rel="stylesheet" href="styles/output.css" type="text/css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3EM%3C/text%3E%3C/svg%3E">
+
+    <link rel="stylesheet" href="/styles/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="shortcut icon"
-        href="https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FScreen%20Shot%202563-12-30%20at%201.32.15%20PM.ico?v=1609353311347">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
 
-    <script src="script.js" defer></script>
+    <script src="/script.js" defer></script>
 </head>
 
 <body class="md:bg-[url('/images/background.jpeg')]">
-    <nav class="topnav">
+    <a href="#main-content" class="visually-hidden">Skip to main content</a>
+
+    <nav class="topnav" aria-label="Primary">
         <a href="/" aria-current="page">Home</a>
-        <a href="pages/portfolio/">Portfolio</a>
-        <a href="pages/quotes/">Quotes</a>
-        <a href="pages/blog/">Blog</a>
+        <a href="/pages/portfolio/">Portfolio</a>
+        <a href="/pages/quotes/">Quotes</a>
+        <a href="/pages/blog/">Blog</a>
     </nav>
 
-    <div class="md:max-w-screen-md mx-auto">
-        <h2 class="text-center">Hi, I'm Mason!</h2>
+    <main id="main-content" class="md:max-w-screen-md mx-auto">
+        <h1>Hi, I'm Mason!</h1>
 
-        <section class="main">
-            <div>
-                <img loading="lazy" class="oval-image" src="images/mzhan150.jpeg" alt="Mason Zhang portrait">
-                <p class="image text-left md:text-justify">
-                    I'm a college senior studying Computer Science and
-                    Philosophy at Brown University. I seek to apply my
-                    interdisciplinary, analytical mindset to explore ML,
-                    Cloud, and DS. In my free time, I love hiking peaceful
-                    trails, reading magical realism novels, and playing
-                    tennis year-round. Please completely feel free to contact
-                    me at mzhang1709@gmail.com
-                </p>
-            </div>
+        <section class="main" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="visually-hidden">About me</h2>
+            <img loading="lazy" decoding="async" class="oval-image" src="/images/mzhan150.jpeg" alt="Mason Zhang portrait" width="600" height="600">
+            <p class="image text-left md:text-justify">
+                I'm a college senior studying Computer Science and
+                Philosophy at Brown University. I seek to apply my
+                interdisciplinary, analytical mindset to explore ML,
+                Cloud, and DS. In my free time, I love hiking peaceful
+                trails, reading magical realism novels, and playing
+                tennis year-round. Please feel free to contact
+                me at <a href="mailto:mzhang1709@gmail.com">mzhang1709@gmail.com</a>.
+            </p>
         </section>
 
-        <div class="slideshow-container">
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-
-            <h2>Places you might find me:</h2>
+        <section class="slideshow-container" aria-labelledby="places-heading">
+            <h2 id="places-heading">Places you might find me</h2>
             <div class="mySlides fade">
-                <img loading="lazy" class="oval-image" src="images/IMG_0612Large.jpeg" alt="The Glorious SciLi">
+                <img loading="lazy" decoding="async" class="oval-image" src="/images/IMG_0612Large.jpeg" alt="The Glorious SciLi at Brown">
             </div>
             <div class="mySlides fade">
-                <img loading="lazy" class="oval-image" src="images/IMG_1211Large.jpeg" alt="RISD Art Museum">
+                <img loading="lazy" decoding="async" class="oval-image" src="/images/IMG_1211Large.jpeg" alt="RISD Art Museum">
             </div>
             <div class="mySlides fade">
-                <img loading="lazy" class="oval-image" src="images/IMG_5467Large.jpeg" alt="The Philosophy Building">
+                <img loading="lazy" decoding="async" class="oval-image" src="/images/IMG_5467Large.jpeg" alt="The Philosophy Building">
             </div>
             <div class="mySlides fade">
-                <img loading="lazy" class="oval-image" src="images/IMG_19E8Large.jpeg" alt="John Hay Library">
+                <img loading="lazy" decoding="async" class="oval-image" src="/images/IMG_19E8Large.jpeg" alt="John Hay Library">
             </div>
             <div class="mySlides fade">
-                <img loading="lazy" class="oval-image" src="images/IMG_3873Large.jpeg" alt="Tennis Courts">
+                <img loading="lazy" decoding="async" class="oval-image" src="/images/IMG_3873Large.jpeg" alt="Tennis Courts">
             </div>
             <div class="mySlides fade">
-                <img loading="lazy" class="oval-image" src="images/IMG_4098Large.jpeg" alt="Musical Dress Rehearsal">
+                <img loading="lazy" decoding="async" class="oval-image" src="/images/IMG_4098Large.jpeg" alt="Musical Dress Rehearsal">
             </div>
             <div class="mySlides fade">
-                <img loading="lazy" class="oval-image" src="images/IMG_7906Large.jpeg" alt="Paul Guyer's Office">
+                <img loading="lazy" decoding="async" class="oval-image" src="/images/IMG_7906Large.jpeg" alt="Professor Paul Guyer's Office">
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <footer>
-        <div id="footer" class="footer-image">
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <a target="_blank" href="https://www.instagram.com/zhangm_sky/" aria-label="Mason on Instagram" rel="noopener noreferrer">
-                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+        <div class="footer-image">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/zhangm_sky/" aria-label="Mason on Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                    <path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.74 0 8.33 0 7.05.07 5.78.13 4.9.34 4.14.63a5.6 5.6 0 0 0-2.04 1.33A5.6 5.6 0 0 0 .77 4c-.3.76-.5 1.64-.56 2.91C.14 8.19.13 8.6.13 11.86s.01 3.67.08 4.95c.06 1.27.27 2.15.56 2.91.32.81.74 1.5 1.43 2.19a5.6 5.6 0 0 0 2.04 1.33c.76.3 1.64.5 2.91.56C8.43 23.87 8.84 23.88 12 23.88s3.57-.01 4.85-.08c1.27-.06 2.15-.27 2.91-.56a5.6 5.6 0 0 0 2.04-1.33 5.6 5.6 0 0 0 1.33-2.04c.3-.76.5-1.64.56-2.91.07-1.28.08-1.69.08-4.95s-.01-3.67-.08-4.95c-.06-1.27-.27-2.15-.56-2.91a5.6 5.6 0 0 0-1.33-2.04A5.6 5.6 0 0 0 19.76.77c-.76-.3-1.64-.5-2.91-.56C15.57.14 15.16.13 12 .13z"/>
+                    <path d="M12 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+                    <circle cx="18.41" cy="5.59" r="1.44"/>
+                </svg>
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/masonzhang9?trk=profile-badge" aria-label="Mason on Linkedin" rel="noopener noreferrer">
-                <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/masonzhang9?trk=profile-badge" aria-label="Mason on LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                    <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.86-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.86 3.36-1.86 3.6 0 4.27 2.37 4.27 5.45v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45C23.21 24 24 23.22 24 22.27V1.73C24 .77 23.21 0 22.22 0z"/>
+                </svg>
             </a>
         </div>
     </footer>

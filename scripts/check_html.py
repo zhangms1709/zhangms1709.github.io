@@ -1,8 +1,9 @@
 """Lightweight structural sanity check for the site's HTML.
 
-Catches the kinds of issues we just fixed so they don't regress: exactly one
+Catches the kinds of issues we want to keep out of the codebase: exactly one
 <head>/<body>/<title>/<html>, no nav placed outside body, every <img> has
-alt text, no orphan inline <style> blocks (everything should be in styles/).
+alt text, no orphan inline <style> blocks (everything should be in styles/),
+and an h1 is present so heading hierarchy starts at 1.
 """
 from __future__ import annotations
 
@@ -11,13 +12,11 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SKIP = {ROOT / "slider" / "index.html"}
-
-TAG_COUNT_RE = lambda tag: re.compile(rf"<{tag}\b[^>]*>", re.IGNORECASE)
+SKIP: set[Path] = set()
 
 
 def count_tag(text: str, tag: str) -> int:
-    return len(TAG_COUNT_RE(tag).findall(text))
+    return len(re.findall(rf"<{tag}\b[^>]*>", text, re.IGNORECASE))
 
 
 def check(path: Path) -> list[str]:
@@ -29,12 +28,14 @@ def check(path: Path) -> list[str]:
         if n != 1:
             problems.append(f"expected exactly one <{tag}>, found {n}")
 
-    # nav (or topnav div) must be inside <body>
+    if count_tag(text, "h1") < 1:
+        problems.append("missing <h1> — every page should start its heading hierarchy at h1")
+
     body_match = re.search(r"<body\b[^>]*>", text, re.IGNORECASE)
     if body_match:
-        before_body = text[: body_match.start()]
+        before_body = text[: body_match.start()].lower()
         for offender in ("<nav", '<div class="topnav"', "<div class='topnav'"):
-            if offender in before_body.lower():
+            if offender in before_body:
                 problems.append(f"`{offender}` appears before <body>")
 
     for m in re.finditer(r"<img\b([^>]*)>", text, re.IGNORECASE):
@@ -42,6 +43,15 @@ def check(path: Path) -> list[str]:
         if "alt=" not in attrs.lower():
             snippet = m.group(0)[:80]
             problems.append(f"<img> without alt attribute: {snippet}")
+
+    if re.search(r"<style\b[^>]*>", text, re.IGNORECASE):
+        problems.append("inline <style> block found — move rules into styles/")
+
+    for m in re.finditer(r"""<a\b[^>]*\btarget=["']_blank["'][^>]*>""", text, re.IGNORECASE):
+        anchor = m.group(0)
+        if "noopener" not in anchor.lower():
+            snippet = anchor[:100]
+            problems.append(f"<a target=\"_blank\"> without rel=\"noopener\": {snippet}")
 
     return problems
 
@@ -60,7 +70,7 @@ def main() -> int:
                 print(f"  - {p}")
     if any_problems:
         return 1
-    print(f"OK - {len(files)} files have valid top-level structure.")
+    print(f"OK - {len(files)} files pass structural checks.")
     return 0
 
 

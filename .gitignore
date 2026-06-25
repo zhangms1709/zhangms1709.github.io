@@ -3,7 +3,28 @@
 Thumbs.db
 .vscode/
 .idea/
+*.swp
 
-# Node / Tailwind build (if you set one up later)
+# Node / Tailwind
 node_modules/
 npm-debug.log*
+yarn-error.log
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local env
+.env
+.env.local
+
+# Local preview only (already in upstream repo; not part of refactor delta)
+images/
+files/
+
+
+server.log
+server.err
+commit-msg.txt

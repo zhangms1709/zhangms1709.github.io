@@ -3,10 +3,21 @@
   "private": true,
   "version": "1.0.0",
   "description": "Personal site of Mason Zhang. Static HTML/CSS deployed to GitHub Pages.",
+  "author": "Mason Zhang <mzhang1709@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://zhangms1709.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangms1709/zhangms1709.github.io.git"
+  },
   "scripts": {
     "build:css": "tailwindcss -i ./styles/style.css -o ./styles/output.css --minify",
     "watch:css": "tailwindcss -i ./styles/style.css -o ./styles/output.css --watch",
-    "validate": "npx --yes html-validate \"./**/*.html\"",
+    "build": "npm run build:css",
+    "validate:html": "npx --yes html-validate \"./**/*.html\"",
+    "check:paths": "python scripts/check_paths.py",
+    "check:html": "python scripts/check_html.py",
+    "check": "npm run validate:html && npm run check:paths && npm run check:html",
     "serve": "npx --yes http-server -c-1 -p 8080 ."
   },
   "devDependencies": {
