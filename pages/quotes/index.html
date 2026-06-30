@@ -6,32 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#34ade6">
     <title>Quotes | Mason Zhang</title>
-    <meta name="description" content="Favorite quotes from Dostoevsky, Thoreau, Tolstoy, and others.">
-    <link rel="canonical" href="https://zhangms1709.github.io/pages/quotes/">
-    <meta property="og:title" content="Quotes | Mason Zhang">
-    <meta property="og:description" content="Favorite quotes from Dostoevsky, Thoreau, Tolstoy, and others.">
-    <meta property="og:url" content="https://zhangms1709.github.io/pages/quotes/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://zhangms1709.github.io/images/daoist.png">
-    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/styles/output.css" type="text/css">
 
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3EM%3C/text%3E%3C/svg%3E">
-
-    <link rel="stylesheet" href="/styles/output.css">
+    <script src="/scripts/site-head.js" defer></script>
+    <site-head title="Quotes" slug="pages/quotes/"></site-head>
+    <script src="/scripts/site-nav.js" defer></script>
 </head>
 
 <body>
-    <a href="#main-content" class="visually-hidden">Skip to main content</a>
+    <site-nav active="quotes"></site-nav>
 
-    <nav class="topnav" aria-label="Primary">
-        <a href="/">Home</a>
-        <a href="/pages/portfolio/">Portfolio</a>
-        <a href="/pages/quotes/" aria-current="page">Quotes</a>
-        <a href="/pages/blog/">Blog</a>
-    </nav>
-
-    <main id="main-content" class="quotes">
-        <h1>Favorite Quotes</h1>
+    <main class="quotes">
+        <h2 class="text-center">Favorite Quotes</h2>
         <div class="grid gap-4">
             <blockquote>
                 <p>Above all, avoid falsehood, every kind of falsehood, especially falseness to yourself.</p>
@@ -51,12 +37,15 @@
             </blockquote>
         </div>
 
-        <figure>
-            <img loading="lazy" decoding="async" src="/images/daoist.png" alt="Daoist illustration">
-            <figcaption class="quotes-link">
+        <div class="daodejing-link">
+            <img loading="lazy" class="hero-img" src="/images/daoist.png" alt="Daoist illustration">
+            <p class="daodejing-link-text">
                 <a href="/pages/daodejing/">道德經 — read the Dao De Jing with hover-to-translate →</a>
-            </figcaption>
-        </figure>
+            </p>
+            <p class="daodejing-link-text">
+                <a href="/pages/zhuangzi/">莊子 — read the Zhuangzi inner chapters with hover-to-translate →</a>
+            </p>
+        </div>
     </main>
 </body>
 

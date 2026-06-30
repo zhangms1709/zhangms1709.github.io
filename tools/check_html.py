@@ -5,8 +5,6 @@ Catches the kinds of issues we want to keep out of the codebase: exactly one
 alt text, no orphan inline <style> blocks (everything should be in styles/),
 and an h1 is present so heading hierarchy starts at 1.
 """
-from __future__ import annotations
-
 import re
 import sys
 from pathlib import Path

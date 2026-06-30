@@ -3,24 +3,27 @@
   "private": true,
   "version": "1.0.0",
   "description": "Personal site of Mason Zhang. Static HTML/CSS deployed to GitHub Pages.",
-  "author": "Mason Zhang <mzhang1709@gmail.com>",
-  "license": "MIT",
-  "homepage": "https://zhangms1709.github.io",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zhangms1709/zhangms1709.github.io.git"
-  },
+  "type": "module",
   "scripts": {
     "build:css": "tailwindcss -i ./styles/style.css -o ./styles/output.css --minify",
     "watch:css": "tailwindcss -i ./styles/style.css -o ./styles/output.css --watch",
-    "build": "npm run build:css",
-    "validate:html": "npx --yes html-validate \"./**/*.html\"",
-    "check:paths": "python scripts/check_paths.py",
-    "check:html": "python scripts/check_html.py",
-    "check": "npm run validate:html && npm run check:paths && npm run check:html",
-    "serve": "npx --yes http-server -c-1 -p 8080 ."
+    "serve": "http-server -c-1 -p 8080 .",
+    "lint:html": "html-validate \"./**/*.html\"",
+    "lint:css": "stylelint \"styles/style.css\" \"styles/slider.css\" \"styles/media-queries.css\"",
+    "lint:js": "eslint \"scripts/**/*.js\" \"pages/daodejing/*.js\"",
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+    "format": "prettier --write \"**/*.{html,css,js,json,md,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,json,md,yml,yaml}\""
   },
   "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0",
+    "html-validate": "^9.0.0",
+    "http-server": "^14.1.1",
+    "prettier": "^3.2.0",
+    "stylelint": "^16.2.0",
+    "stylelint-config-standard": "^36.0.0",
     "tailwindcss": "^3.4.0"
   }
 }

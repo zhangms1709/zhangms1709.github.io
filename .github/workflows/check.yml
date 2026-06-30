@@ -23,16 +23,29 @@ jobs:
           args: --no-progress --exclude-mail --accept 200,206,429 './**/*.html'
           fail: true
 
-  html-validate:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: npm
-      - name: Validate HTML
-        run: npx --yes html-validate './**/*.html'
+          cache: 'npm'
+      - run: npm ci || npm install
+      - name: Build CSS (so output.css matches source)
+        run: npm run build:css
+      - name: Verify the rebuilt CSS matches what's committed
+        run: |
+          if ! git diff --quiet -- styles/output.css; then
+            echo "::error::styles/output.css is out of sync with styles/style.css. Run \`npm run build:css\` and commit the result."
+            git --no-pager diff -- styles/output.css | head -200
+            exit 1
+          fi
+      - run: npm run lint:html
+      - run: npm run lint:css
+      - run: npm run lint:js
+      - name: Check formatting
+        run: npm run format:check
 
   css-build:
     runs-on: ubuntu-latest
@@ -62,6 +75,6 @@ jobs:
         with:
           python-version: '3.12'
       - name: Verify local refs resolve with exact case (GitHub Pages is case-sensitive)
-        run: python scripts/check_paths.py
+        run: python tools/check_paths.py
       - name: Verify HTML structural sanity
-        run: python scripts/check_html.py
+        run: python tools/check_html.py

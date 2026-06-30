@@ -4,16 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#34ade6">
-    <title>Dao De Jing | Mason Zhang</title>
+    <title>Zhuangzi (Inner Chapters) | Mason Zhang</title>
     <link rel="stylesheet" href="/styles/output.css" type="text/css">
     <link rel="stylesheet" href="/styles/chinese-reader.css" type="text/css">
 
     <script src="/scripts/site-head.js" defer></script>
-    <site-head title="Dao De Jing — interactive"
-               slug="pages/daodejing/"
+    <site-head title="Zhuangzi (Inner Chapters) — interactive"
+               slug="pages/zhuangzi/"
                type="article"
-               description="The Dao De Jing (道德經) with hover-to-show pronunciation and definition for each character. James Legge translation."></site-head>
+               description="The seven inner chapters (內篇) of the Zhuangzi (《莊子》) with hover-to-show pronunciation and definition for each character. James Legge translation."></site-head>
 
     <script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.18.5/dist/index.js"></script>
     <script src="/scripts/zh-dict.js"></script>
@@ -25,25 +24,26 @@
 <body class="blog-post">
     <site-nav></site-nav>
 
-    <main id="main-content" class="portfolio">
-        <div class="content ddj-content">
-            <h1 class="ddj-title-zh">道德經 — Dao De Jing</h1>
+    <main id="write" class="portfolio">
+        <div class="content" style="text-align:left;">
+            <h2 style="text-align:center;">莊子 — Zhuangzi (Inner Chapters)</h2>
 
             <div class="ddj-intro">
-                <p class="ddj-byline">
-                    <em>Warring States, ca. 475–221 BC · attributed to Laozi · English by James Legge</em>
+                <p style="text-align:center;">
+                    <em>Warring States, ca. 4th c. BC · attributed to Zhuang Zhou (莊周) · English by James Legge</em>
                 </p>
                 <div class="ddj-hint">
                     <strong>Hover</strong> any Chinese character to see its pronunciation (pinyin) and a short definition.
-                    Pinyin is rendered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/zh-lx/pinyin-pro">pinyin-pro</a>;
+                    Pinyin is rendered by <a href="https://github.com/zh-lx/pinyin-pro" target="_blank" rel="noopener">pinyin-pro</a>;
                     definitions are a hand-curated gloss for the characters used in this text.
+                    Only the seven inner chapters (內篇) are included: 逍遙遊, 齊物論, 養生主, 人間世, 德充符, 大宗師, 應帝王.
                 </div>
             </div>
 
-            <nav class="ddj-toc" id="ddj-toc" aria-label="Chapter index"></nav>
+            <div class="ddj-toc" id="ddj-toc" aria-label="Inner-chapter index"></div>
 
             <div id="ddj-body">
-                <div class="ddj-status">Loading the 81 chapters…</div>
+                <div class="ddj-status">Loading the seven inner chapters…</div>
             </div>
         </div>
     </main>

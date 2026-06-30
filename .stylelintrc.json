@@ -1,0 +1,15 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "selector-class-pattern": null,
+    "selector-id-pattern": null,
+    "no-descending-specificity": null,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["tailwind", "apply", "layer", "screen", "variants", "responsive"]
+      }
+    ]
+  },
+  "ignoreFiles": ["styles/output.css", "node_modules/**", "**/*.html"]
+}

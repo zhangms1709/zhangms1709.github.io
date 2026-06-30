@@ -1,6 +1,7 @@
 // 81 chapters of the Dao De Jing.
 // zh: Chinese text. en: James Legge translation (\n = line break, \n\n = paragraph break).
-window.DDJ_CHAPTERS = [
+// Consumed by scripts/zh-reader.js, which reads window.ZH_CHAPTERS.
+window.ZH_CHAPTERS = [
   {n:1, title:"Embodying the Dao",
    zh:"道可道，非常道。名可名，非常名。無名天地之始；有名萬物之母。故常無欲，以觀其妙；常有欲，以觀其徼。此兩者，同出而異名，同謂之玄。玄之又玄，衆妙之門。",
    en:"The Dao that can be trodden is not the enduring and unchanging Dao. The name that can be named is not the enduring and unchanging name. (Conceived of as) having no name, it is the Originator of heaven and earth; (conceived of as) having a name, it is the Mother of all things.\n\nAlways without desire we must be found,\nIf its deep mystery we would sound;\nBut if desire always within us be,\nIts outer fringe is all that we shall see.\n\nUnder these two aspects, it is really the same; but as development takes place, it receives the different names. Together we call them the Mystery. Where the Mystery is the deepest is the gate of all that is subtle and wonderful."},
