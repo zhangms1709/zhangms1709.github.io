@@ -1,0 +1,25 @@
+{
+  "extends": ["html-validate:recommended"],
+  "elements": [
+    "html5",
+    {
+      "site-nav": {
+        "flow": true,
+        "metadata": false,
+        "transparent": false,
+        "void": false,
+        "attributes": {
+          "active": { "enum": ["home", "portfolio", "quotes", "blog"] }
+        }
+      }
+    }
+  ],
+  "rules": {
+    "void-style": "off",
+    "no-trailing-whitespace": "off",
+    "wcag/h32": "off",
+    "no-inline-style": "warn",
+    "require-sri": "off",
+    "element-required-attributes": "warn"
+  }
+}

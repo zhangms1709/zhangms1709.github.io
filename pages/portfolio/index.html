@@ -2,233 +2,168 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <meta name="description" content="Personal website of Mason Zhang.">
-    <link rel="canonical" href="https://zhangms1709.github.io/pages/portfolio/">
-    <meta property="og:title" content="Portfolio">
-    <meta property="og:description" content="Personal website of Mason Zhang.">
-    <meta property="og:url" content="https://zhangms1709.github.io/pages/portfolio/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-
+    <title>Portfolio | Mason Zhang</title>
     <link rel="stylesheet" href="/styles/output.css" type="text/css">
-    <link rel="shortcut icon"
-        href="https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FScreen%20Shot%202563-12-30%20at%201.32.15%20PM.ico?v=1609353311347">
+
+    <script src="/scripts/site-head.js" defer></script>
+    <site-head title="Portfolio" slug="pages/portfolio/"></site-head>
+    <script src="/scripts/site-nav.js" defer></script>
 </head>
 
 <body>
-    <nav class="topnav">
-        <a href="/">Home</a>
-        <a href="/pages/portfolio/" aria-current="page">Portfolio</a>
-        <a href="/pages/quotes/">Quotes</a>
-        <a href="/pages/blog/">Blog</a>
-    </nav>
+    <site-nav active="portfolio"></site-nav>
 
-    <div id="write" class="portfolio">
+    <main id="write" class="portfolio">
         <h2>My Coding Projects</h2>
-
-        <div class="card">
-            <a href="https://labs.icahn.mssm.edu/maayanlab/summer-research-program/virtual-symposium/">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/gbm2.png" alt="">
+        <div class="card-grid">
+            <article class="card">
+                <a href="https://labs.icahn.mssm.edu/maayanlab/summer-research-program/virtual-symposium/" target="_blank" rel="noopener noreferrer">
+                    <div class="card-image"><img loading="lazy" src="/images/gbm2.png" alt=""></div>
+                    <div class="card-text-box"><h4>RNA-Seq PMBC Profiles Age Prediction</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Clustering</span>
+                    <span class="tag">Gradient Boosting</span>
+                    <span class="tag">Genomics</span>
+                    <span class="tag">Python</span>
                 </div>
-                <div class="card-text-box">
-                    <h4>RNA-Seq PMBC Profiles Age Prediction</h4>
+            </article>
+            <article class="card">
+                <a href="https://career-center.brown.edu/" target="_blank" rel="noopener noreferrer">
+                    <div class="card-image"><img loading="lazy" src="/images/web.png" alt=""></div>
+                    <div class="card-text-box"><h4>60+ Websites for Brown University</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Information Architecture</span>
+                    <span class="tag">Drupal</span>
+                    <span class="tag">UI/UX</span>
+                    <span class="tag">HTML</span>
                 </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Clustering</span>
-                <span class="tag">Gradient Boosting</span>
-                <span class="tag">Genomics</span>
-                <span class="tag">Python</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <a href="https://career-center.brown.edu/">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/web.png" alt="">
+            </article>
+            <article class="card">
+                <a href="https://github.com/zhangms1709/cervantes" target="_blank" rel="noopener noreferrer">
+                    <div class="card-image"><img loading="lazy" src="/images/nn.png" alt=""></div>
+                    <div class="card-text-box"><h4>Cervantes (text generation)</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Generative Models</span>
+                    <span class="tag">RL</span>
+                    <span class="tag">Tensorflow</span>
+                    <span class="tag">Python</span>
                 </div>
-                <div class="card-text-box">
-                    <h4>60+ Websites for Brown University</h4>
+            </article>
+            <article class="card">
+                <a href="https://github.com/zhangms1709" target="_blank" rel="noopener noreferrer">
+                    <div class="card-image"><img loading="lazy" src="/images/tetris2.png" alt=""></div>
+                    <div class="card-text-box"><h4>Tetris</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Polymorphism</span>
+                    <span class="tag">OOP</span>
+                    <span class="tag">Inheritance</span>
+                    <span class="tag">Java</span>
                 </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Information Architecture</span>
-                <span class="tag">Drupal</span>
-                <span class="tag">UI/UX</span>
-                <span class="tag">HTML</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <a href="https://github.com/zhangms1709/cervantes">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/nn.png" alt="">
+            </article>
+            <article class="card">
+                <a href="https://github.com/zhangms1709" target="_blank" rel="noopener noreferrer">
+                    <div class="card-image"><img loading="lazy" src="/images/pagerank1.png" alt=""></div>
+                    <div class="card-text-box"><h4>Pagerank (Indexing and Querying)</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Algorithms</span>
+                    <span class="tag">NLP</span>
+                    <span class="tag">TF-IDF</span>
+                    <span class="tag">Python</span>
                 </div>
-                <div class="card-text-box">
-                    <h4>Cervantes (text generation)</h4>
+            </article>
+            <article class="card">
+                <a href="https://github.com/zhangms1709" target="_blank" rel="noopener noreferrer">
+                    <div class="card-image"><img loading="lazy" src="/images/shell.png" alt=""></div>
+                    <div class="card-text-box"><h4>Shell Implementation</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Reaping</span>
+                    <span class="tag">Concurrency</span>
+                    <span class="tag">Signal Handling</span>
+                    <span class="tag">C</span>
                 </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Generative Models</span>
-                <span class="tag">RL</span>
-                <span class="tag">Tensorflow</span>
-                <span class="tag">Python</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <a href="https://github.com/zhangms1709">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/tetris2.png" alt="">
-                </div>
-                <div class="card-text-box">
-                    <h4>Tetris</h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Polymorphism</span>
-                <span class="tag">OOP</span>
-                <span class="tag">Inheritance</span>
-                <span class="tag">Java</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <a href="https://github.com/zhangms1709">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/pagerank1.png" alt="">
-                </div>
-                <div class="card-text-box">
-                    <h4>Pagerank (Indexing and Querying)</h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Algorithms</span>
-                <span class="tag">NLP</span>
-                <span class="tag">TF-IDF</span>
-                <span class="tag">Python</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <a href="https://github.com/zhangms1709">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/shell.png" alt="">
-                </div>
-                <div class="card-text-box">
-                    <h4>Shell Implementation</h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Reaping</span>
-                <span class="tag">Concurrency</span>
-                <span class="tag">Signal Handling</span>
-                <span class="tag">C</span>
-            </div>
+            </article>
         </div>
 
         <p><i>Note: The last three project repositories are private to abide by Brown's Academic Code. Feel free to contact me for sharing access.</i></p>
-        <p>&nbsp;</p>
+        <div class="spacer-lg" aria-hidden="true"></div>
 
         <h2>Philosophical Essays</h2>
-
-        <div class="card">
-            <a href="/files/FinalProject.pdf">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/moraled.png" alt="">
+        <div class="card-grid">
+            <article class="card">
+                <a href="/files/FinalProject.pdf">
+                    <div class="card-image"><img loading="lazy" src="/images/moraled.png" alt=""></div>
+                    <div class="card-text-box"><h4>The Moral Obligation of Digital Ed.</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Deontology</span>
+                    <span class="tag">Technology Ethics</span>
                 </div>
-                <div class="card-text-box">
-                    <h4>The Moral Obligation of Digital Ed.</h4>
+            </article>
+            <article class="card">
+                <a href="/files/PHIL2105.pdf">
+                    <div class="card-image"><img loading="lazy" src="/images/plato.png" alt=""></div>
+                    <div class="card-text-box"><h4>Timing and Metrios in Plato's <i>Sophist</i></h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Metaphysics</span>
+                    <span class="tag">Ancient Greek</span>
                 </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Deontology</span>
-                <span class="tag">Technology Ethics</span>
-            </div>
+            </article>
+            <article class="card">
+                <a href="/files/MidtermPaper.pdf">
+                    <div class="card-image"><img loading="lazy" src="/images/alyosha.png" alt=""></div>
+                    <div class="card-text-box"><h4>Alyosha: The Incommensurability of Life</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Literary Theory</span>
+                    <span class="tag">Existentialism</span>
+                </div>
+            </article>
+            <article class="card">
+                <a href="/files/Kant.pdf">
+                    <div class="card-image"><img loading="lazy" src="/images/kant.png" alt=""></div>
+                    <div class="card-text-box"><h4>Kant and Hume: Crossroads of Humanity</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Moral Theories</span>
+                    <span class="tag">Normative Ethics</span>
+                </div>
+            </article>
         </div>
 
-        <div class="card">
-            <a href="/files/PHIL2105.pdf">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/plato.png" alt="">
-                </div>
-                <div class="card-text-box">
-                    <h4>Timing and Metrios in Plato's <i>Sophist</i></h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Metaphysics</span>
-                <span class="tag">Ancient Greek</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <a href="/files/MidtermPaper.pdf">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/alyosha.png" alt="">
-                </div>
-                <div class="card-text-box">
-                    <h4>Alyosha: The Incommensurability of Life</h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Literary Theory</span>
-                <span class="tag">Existentialism</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <a href="/files/Kant.pdf">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/kant.png" alt="">
-                </div>
-                <div class="card-text-box">
-                    <h4>Kant and Hume: Crossroads of Humanity</h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Moral Theories</span>
-                <span class="tag">Normative Ethics</span>
-            </div>
-        </div>
-
-        <p>&nbsp;</p>
+        <div class="spacer-lg" aria-hidden="true"></div>
         <h2>My Publications</h2>
-
-        <div class="card">
-            <a href="https://onlinelibrary.wiley.com/doi/10.1111/fwb.13907">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/fresh.png" alt="">
+        <div class="card-grid">
+            <article class="card">
+                <a href="https://onlinelibrary.wiley.com/doi/10.1111/fwb.13907" target="_blank" rel="noopener noreferrer">
+                    <div class="card-image"><img loading="lazy" src="/images/fresh.png" alt=""></div>
+                    <div class="card-text-box"><h4>Salt contamination in wood frogs (Wiley)</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Evolutionary Ecology</span>
+                    <span class="tag">Image Analysis</span>
                 </div>
-                <div class="card-text-box">
-                    <h4>Salt contamination in wood frogs (Wiley)</h4>
+            </article>
+            <article class="card">
+                <a href="/files/cjse.pdf">
+                    <div class="card-image"><img loading="lazy" src="/images/nysc.png" alt=""></div>
+                    <div class="card-text-box"><h4>NYSCamp CT Delegate Profile (CJSE)</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Science Education</span>
                 </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Evolutionary Ecology</span>
-                <span class="tag">Image Analysis</span>
-            </div>
+            </article>
         </div>
 
-        <div class="card">
-            <a href="/files/cjse.pdf">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/nysc.png" alt="">
-                </div>
-                <div class="card-text-box">
-                    <h4>NYSCamp CT Delegate Profile (CJSE)</h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Science Education</span>
-            </div>
-        </div>
-
-        <p>&nbsp;</p>
+        <div class="spacer-lg" aria-hidden="true"></div>
         <div class="hidden md:block">
             <h2>My Brown Video Portfolio</h2>
             <div class="flex justify-center">
@@ -238,7 +173,7 @@
                     allowfullscreen></iframe>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>

@@ -2,124 +2,103 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog</title>
-    <meta name="description" content="Personal website of Mason Zhang.">
-    <link rel="canonical" href="https://zhangms1709.github.io/pages/blog/">
-    <meta property="og:title" content="Blog">
-    <meta property="og:description" content="Personal website of Mason Zhang.">
-    <meta property="og:url" content="https://zhangms1709.github.io/pages/blog/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-
+    <title>Blog | Mason Zhang</title>
     <link rel="stylesheet" href="/styles/output.css" type="text/css">
-    <link rel="shortcut icon"
-        href="https://cdn.glitch.com/0bbec082-7d40-4980-a895-a6a1b6e627ab%2FScreen%20Shot%202563-12-30%20at%201.32.15%20PM.ico?v=1609353311347">
+
+    <script src="/scripts/site-head.js" defer></script>
+    <site-head title="Blog" slug="pages/blog/"></site-head>
+    <script src="/scripts/site-nav.js" defer></script>
 </head>
 
 <body>
-    <nav class="topnav">
-        <a href="/">Home</a>
-        <a href="/pages/portfolio/">Portfolio</a>
-        <a href="/pages/quotes/">Quotes</a>
-        <a href="/pages/blog/" aria-current="page">Blog</a>
-    </nav>
+    <site-nav active="blog"></site-nav>
 
-    <div id="write" class="portfolio">
+    <main id="write" class="portfolio">
         <h2>Blog</h2>
-        <p class="text-justify">This blog contains my musings, thoughts, and discussions on topics relating to the vast literature on the philosophy of AI (robots, responsibility, consciousness, labor, explainability, fairness) mentored by Prof. <a href="http://julianetter.de/">Julia Netter</a>.</p>
+        <p class="blog-lede">This blog contains my musings, thoughts, and discussions on topics relating to the vast literature on the philosophy of AI (robots, responsibility, consciousness, labor, explainability, fairness) mentored by Prof. <a href="http://julianetter.de/">Julia Netter</a>.</p>
 
-        <div class="card">
-            <a href="/pages/control/">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/tracks.jpeg" alt="">
+        <div class="card-grid">
+            <article class="card">
+                <a href="/pages/control/">
+                    <div class="card-image">
+                        <img loading="lazy" src="/images/tracks.jpeg" alt="">
+                    </div>
+                    <div class="card-text-box"><h4>The Control Condition</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Ethics</span>
+                    <span class="tag">Consciousness</span>
                 </div>
-                <div class="card-text-box">
-                    <h4>The Control Condition</h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Ethics</span>
-                <span class="tag">Consciousness</span>
-            </div>
-        </div>
+            </article>
 
-        <div class="card">
-            <a href="/pages/forster/">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/Gowy-icaro-prado.jpeg" alt="">
+            <article class="card">
+                <a href="/pages/forster/">
+                    <div class="card-image">
+                        <img loading="lazy" src="/images/Gowy-icaro-prado.jpeg" alt="">
+                    </div>
+                    <div class="card-text-box"><h4>Literature and Technofuturism</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Futurism</span>
+                    <span class="tag">History</span>
                 </div>
-                <div class="card-text-box">
-                    <h4>Literature and Technofuturism</h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Futurism</span>
-                <span class="tag">History</span>
-            </div>
-        </div>
+            </article>
 
-        <div class="card">
-            <a href="/pages/frege/">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/frege.png" alt="">
+            <article class="card">
+                <a href="/pages/frege/">
+                    <div class="card-image">
+                        <img loading="lazy" src="/images/frege.png" alt="">
+                    </div>
+                    <div class="card-text-box"><h4>Off the Beaten Path</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Deductive Logic</span>
+                    <span class="tag">Pluralism</span>
                 </div>
-                <div class="card-text-box">
-                    <h4>Off the Beaten Path</h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Deductive Logic</span>
-                <span class="tag">Pluralism</span>
-            </div>
-        </div>
+            </article>
 
-        <div class="card">
-            <a href="/pages/world/">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/earth.jpg" alt="">
+            <article class="card">
+                <a href="/pages/world/">
+                    <div class="card-image">
+                        <img loading="lazy" src="/images/earth.jpg" alt="">
+                    </div>
+                    <div class="card-text-box"><h4>On the creation of digital worlds</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Metaphysics</span>
+                    <span class="tag">Reductionism</span>
                 </div>
-                <div class="card-text-box">
-                    <h4>On the creation of digital worlds</h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Metaphysics</span>
-                <span class="tag">Reductionism</span>
-            </div>
-        </div>
+            </article>
 
-        <div class="card">
-            <a href="/pages/deepfake/">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/mask.jpg" alt="">
+            <article class="card">
+                <a href="/pages/deepfake/">
+                    <div class="card-image">
+                        <img loading="lazy" src="/images/mask.jpg" alt="">
+                    </div>
+                    <div class="card-text-box"><h4>"I am the AI"</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Humanism</span>
+                    <span class="tag">Ethics</span>
                 </div>
-                <div class="card-text-box">
-                    <h4>"I am the AI"</h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Humanism</span>
-                <span class="tag">Ethics</span>
-            </div>
-        </div>
+            </article>
 
-        <div class="card">
-            <a href="/pages/robot/">
-                <div>
-                    <img loading="lazy" class="curr" src="/images/robots.jpg" alt="">
+            <article class="card">
+                <a href="/pages/robot/">
+                    <div class="card-image">
+                        <img loading="lazy" src="/images/robots.jpg" alt="">
+                    </div>
+                    <div class="card-text-box"><h4>Robot Kings</h4></div>
+                </a>
+                <div class="card-tags">
+                    <span class="tag">Plato</span>
+                    <span class="tag">Political Philosophy</span>
                 </div>
-                <div class="card-text-box">
-                    <h4>Robot Kings</h4>
-                </div>
-            </a>
-            <div class="card-tags">
-                <span class="tag">Plato</span>
-                <span class="tag">Political Philosophy</span>
-            </div>
+            </article>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>

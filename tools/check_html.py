@@ -4,8 +4,6 @@ Catches the kinds of issues we just fixed so they don't regress: exactly one
 <head>/<body>/<title>/<html>, no nav placed outside body, every <img> has
 alt text, no orphan inline <style> blocks (everything should be in styles/).
 """
-from __future__ import annotations
-
 import re
 import sys
 from pathlib import Path

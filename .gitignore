@@ -4,6 +4,10 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Node / Tailwind build (if you set one up later)
+# Node / Tailwind build
 node_modules/
 npm-debug.log*
+
+# Scratch / capture artifacts
+.tmp_*
+*.bundle

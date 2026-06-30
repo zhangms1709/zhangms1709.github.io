@@ -4,8 +4,6 @@ Mirrors what GitHub Pages does on Linux: case-sensitive lookup of every local
 href/src referenced by any HTML or CSS file. Exits 1 on any miss so it can run
 in CI.
 """
-from __future__ import annotations
-
 import os
 import re
 import sys

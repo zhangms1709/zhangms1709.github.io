@@ -816,8 +816,9 @@ h4 {
   font-family: "Courier New", Courier, monospace;
 }
 
-p3 {
-  font-family: Verdana;
+p {
+  font-family: Calibri, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16.5px;
   margin-bottom: 20px;
 }
 
@@ -936,7 +937,7 @@ section {
 .blog-post .content {
   width: 60%;
   margin: 0 auto;
-  font-family: "Verdana", sans-serif;
+  font-family: Calibri, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px;
 }
 
@@ -968,4 +969,283 @@ blockquote::before {
   line-height: 0;
   vertical-align: -0.41em;
   padding: 0 0.1em;
+}
+
+/* ============================================================
+   Site overrides — appended manually until the next clean
+   `npm run build:css`. These rules are also in styles/style.css.
+   Anything that conflicts with earlier blocks intentionally wins
+   here because of cascade order.
+   ============================================================ */
+
+p {
+    font-family: Calibri, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16.5px;
+}
+
+.tag {
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: Calibri, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.blog-post .content {
+    width: 60%;
+    margin: 0 auto;
+    font-family: Calibri, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+/* Stop the global img height rule from forcing card images to 40vh. */
+img {
+    height: auto;
+}
+
+.hero-img {
+    height: 65vh;
+    width: auto;
+    max-width: 100%;
+    margin: 3vh auto;
+    display: block;
+}
+
+.oval-image {
+    border-radius: 5%;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-text {
+    max-width: 60ch;
+    margin: 1rem auto 2rem;
+    padding: 0 1rem;
+}
+
+/* Vertical breathing-room utilities (replace <p>&nbsp;</p> hacks). */
+.spacer {
+    height: 1.5rem;
+}
+
+.spacer-lg {
+    height: 3rem;
+}
+
+/* Top nav as a flex row (replaces the float-left pattern from old output). */
+.topnav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.topnav a {
+    float: none;
+}
+
+/* Home-page slideshow: only the active slide is visible, and it centers. */
+.slideshow-container {
+    text-align: center;
+}
+
+.slideshow-container .mySlides {
+    display: none;
+}
+
+.slideshow-container .mySlides.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer (home page social links). */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-image {
+    padding: 2rem;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    min-width: 240px;
+    max-width: 480px;
+}
+
+.footer-image a {
+    display: inline-block;
+    padding: 0 0.6rem;
+    color: #000;
+}
+
+.footer-image a:hover {
+    color: #34ade6;
+}
+
+.footer-image svg {
+    width: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+}
+
+/* ---------- Card grid (blog + portfolio) ----------
+   Replaces the inline-block .card pattern with a flex-wrap grid where every
+   card is the same size: fixed-aspect image area + fixed-height title area. */
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.card {
+    width: 320px;
+    background: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 360px;
+    }
+}
+
+.card > a {
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+}
+
+.card-text-box {
+    text-align: center;
+    color: #000;
+    padding: 1rem 1rem 0.25rem;
+    min-height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text-box h4 {
+    margin: 0;
+}
+
+.card-tags {
+    flex-wrap: wrap;
+    padding: 0 0.75rem 1rem;
+}
+
+/* Blog index lede paragraph. */
+.blog-lede {
+    max-width: 70ch;
+    margin: 0 auto 1.5rem;
+    text-align: justify;
+    padding: 0 1rem;
+}
+
+/* Quotes-page link to the daodejing reader. */
+.daodejing-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.daodejing-link-text {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+    .blog-post .content {
+        width: 92%;
+        padding: 12px;
+    }
+
+    .card {
+        width: min(92vw, 360px);
+    }
+
+    .hero-img {
+        height: auto;
+        width: min(92vw, 400px);
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ---------- Tailwind utilities (manually shimmed) ----------
+   Until the next clean `npm run build:css`, these are hand-added so the
+   utility classes used in markup actually take effect. They will be
+   regenerated by Tailwind on the next build (this block becomes redundant). */
+
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+.text-justify { text-align: justify; }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+.my-4    { margin-top: 1rem; margin-bottom: 1rem; }
+.mt-2    { margin-top: 0.5rem; }
+.mt-4    { margin-top: 1rem; }
+.mb-4    { margin-bottom: 1rem; }
+
+.p-4     { padding: 1rem; }
+.p-24    { padding: 6rem; }
+
+.flex            { display: flex; }
+.flex-col        { flex-direction: column; }
+.items-center    { align-items: center; }
+.justify-center  { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-2           { gap: 0.5rem; }
+.gap-4           { gap: 1rem; }
+.grid            { display: grid; }
+
+.hidden { display: none; }
+
+@media (min-width: 768px) {
+  .md\:max-w-screen-md { max-width: 768px; }
+  .md\:text-justify { text-align: justify; }
+  .md\:block { display: block; }
+  .md\:flex  { display: flex; }
+  .md\:bg-\[url\(\'\/images\/background\.jpeg\'\)\] { background-image: url('/images/background.jpeg'); }
 }
